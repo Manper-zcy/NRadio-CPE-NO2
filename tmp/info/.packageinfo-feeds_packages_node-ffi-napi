@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-ffi-napi/Makefile
+Build-Depends: node/host
+
+Package: node-ffi-napi
+Submenu: Node.js
+Version: 4.0.3-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libffi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node.js Foreign Function Interface for N-API
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ffi-napi-4.0.3.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  node-ffi-napi is a Node.js addon for loading and calling dynamic libraries using pure JavaScript. It can be used to create bindings to native libraries without writing any C++ code.
+https://www.npmjs.com/package/ffi-napi
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/nas_luci/luci-app-istorex/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-istorex
+Submenu: 3. Applications
+Version: 0.6.6
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-app-quickstart +luci-app-store +luci-lib-taskd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: nas_luci
+Title: IstoreX
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: IstoreX
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

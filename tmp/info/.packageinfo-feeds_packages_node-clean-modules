@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-clean-modules/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-clean-modules
+Submenu: Node.js
+Version: 3.0.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Clean up/prune unnecessary files
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: clean-modules-3.0.4.tgz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Clean up/prune unnecessary files and reduce the size of your node_modules directory. Useful for CI caches or for reducing the size of your AWS Lambdas/Azure Functions.
+https://www.npmjs.org/package/clean-modules
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

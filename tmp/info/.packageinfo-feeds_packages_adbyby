@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/packages/adbyby/Makefile
+
+Package: adbyby
+Version: 2.7-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(i386||x86_64||arm||aarch64||mipsel||mips)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Powerful adblock module to block ad.
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Adbyby is a powerful adblock module to block ad,just like adblock.
+http://www.adbyby.com/
+
+@@
+
+

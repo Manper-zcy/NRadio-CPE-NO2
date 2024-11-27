@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/packages/udp2raw/Makefile
+
+Package: udp2raw
+Version: 20200818.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +USE_GLIBC:libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: udp2raw-tunnel
+Section: net
+Category: Network
+Repository: packages
+Title: Tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic
+Maintainer: Yu Wang
+Source: udp2raw-20200818.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   udp2raw-tunnel is a tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic by using Raw Socket.
+https://github.com/wangyu-/udp2raw
+Yu Wang
+@@
+
+

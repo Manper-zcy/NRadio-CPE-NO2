@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-modclean/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-modclean
+Submenu: Node.js
+Version: 3.0.0-beta.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Remove unwanted files and directories from your node_modules folder
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: modclean-3.0.0-beta.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Remove unwanted files and directories from your node_modules folder
+https://www.npmjs.org/package/modclean
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

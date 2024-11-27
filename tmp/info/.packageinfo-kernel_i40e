@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/i40e/Makefile
+
+Package: kmod-i40e-vendor
+Submenu: Network Devices
+Version: <LINUX_VERSION>+2.23.17--1
+Depends: @PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-libphy @TARGET_x86
+Conflicts: kmod-i40e
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Controller XL710 Family support (vendor driver)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: i40e-2.23.17.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Kernel modules for Intel(R) Ethernet Controller XL710 Family 40 Gigabit Ethernet adapters.
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

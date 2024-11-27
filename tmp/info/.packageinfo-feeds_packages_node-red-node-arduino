@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-node-arduino/Makefile
+Build-Depends: node/host
+
+Package: node-red-node-arduino
+Submenu: Node.js
+Version: 0.3.1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-firmata
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: node to talk to an Arduino running firmata
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-node-arduino-0.3.1.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A Node-RED node to talk to an Arduino running firmata
+https://flows.nodered.org/node/node-red-node-arduino
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

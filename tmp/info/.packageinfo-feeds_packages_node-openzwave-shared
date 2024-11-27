@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-openzwave-shared/Makefile
+Build-Depends: node/host
+
+Package: node-openzwave-shared
+Submenu: Node.js
+Version: 1.7.2-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libopenzwave
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node.JS bindings for OpenZWave
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: openzwave-shared-1.7.2.tgz
+License: ISC
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  You can now easily control and manage your ZWave devices (lights, dimmers, blinds, you name it) from within Node.js applications. This library also supports secure devices (eg door locks) that require encryption.
+https://www.npmjs.org/package/openzwave-shared
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

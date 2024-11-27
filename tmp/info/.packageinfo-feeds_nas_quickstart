@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/nas/quickstart/Makefile
+
+Package: quickstart
+Submenu: Web Servers/Proxies
+Version: 0.8.9-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(x86_64||aarch64||arm) +shadow-utils +shadow-useradd +mount-utils +block-mount +lsblk +e2fsprogs +parted +smartmontools +smartd +mdadm +ip-full +ubus +uci +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: nas
+Title: Quickstart, the quick start.
+Maintainer: 
+Source: quickstart-binary-0.8.9.tar.gz
+Type: ipkg
+Description:   Quickstart is a dashboard & user guide
+https://easepi.linkease.com/
+
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/rtl8189es/Makefile
+
+Package: kmod-rtl8189es
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-10-30-e58bd86c9d9408c648b1246a0dd76b16856ec172-0
+Depends: +kmod-cfg80211 +kmod-mmc +@DRIVER_11N_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Realtek RTL8189ETV SDIO WiFi
+Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
+Source: rtl8189es-2022-10-30-e58bd86c9d9408c648b1246a0dd76b16856ec172.tar.xz
+Type: ipkg
+Description: Realtek RTL8189ETV SDIO WiFi
+Hauke Mehrtens <hauke@hauke-m.de>
+@@
+
+

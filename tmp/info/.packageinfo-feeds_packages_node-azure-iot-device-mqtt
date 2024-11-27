@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-azure-iot-device-mqtt/Makefile
+Build-Depends: node/host
+
+Package: node-azure-iot-device-mqtt
+Submenu: Node.js
+Version: 1.16.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: MQTT transport for Azure IoT device SDK
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: azure-iot-device-mqtt-1.16.3.tgz
+License: MIT
+Type: ipkg
+Description:  Communicate with Azure IoT Hub from any device over MQTT
+https://www.npmjs.org/package/azure-iot-device-mqtt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

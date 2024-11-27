@@ -1,0 +1,22 @@
+Source-Makefile: package/emortal/ipv6-helper/Makefile
+
+Package: ipv6helper
+Version: 1.0-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-proto-ipv6 +wget-ssl +libip6tc +ip6tables +ip6tables-mod-nat +kmod-ipt-nat6 +kmod-nf-nat6 +odhcpd-ipv6only +odhcp6c +6in4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: ipv6
+Category: Extra packages
+Repository: base
+Title: IPv6 Helper and Dynamic Update he.net of ip
+Maintainer: LEAN
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	IPv6 Helper and Dynamic Update he.net of ip
+LEAN
+@@
+
+

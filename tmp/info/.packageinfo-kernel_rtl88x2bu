@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/rtl88x2bu/Makefile
+
+Package: kmod-rtl88x2bu
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-12-21-46e266521462a0cc40379debaa77c5fcc0bec258-1
+Depends: +kmod-cfg80211 +kmod-usb-core +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: kmod-rtl88x2bu
+Section: kernel
+Category: Kernel modules
+Title: Realtek 8812BU/8822BU support
+Maintainer: 
+Source: rtl88x2bu-2022-12-21-46e266521462a0cc40379debaa77c5fcc0bec258.tar.xz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Realtek 8812BU/8822BU support
+
+@@
+
+

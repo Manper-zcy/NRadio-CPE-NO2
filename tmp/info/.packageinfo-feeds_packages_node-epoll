@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-epoll/Makefile
+Build-Depends: node/host
+
+Package: node-epoll
+Submenu: Node.js
+Version: 4.0.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A low-level Node.js binding for the Linux epoll API
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: epoll-4.0.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A low-level Node.js binding for the Linux epoll API for monitoring multiple file descriptors to see if I/O is possible on any of them.
+https://www.npmjs.org/package/epoll
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

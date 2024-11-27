@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/lua-periphery/Makefile
+
+Package: lua-periphery
+Submenu: Lua
+Version: 2.4.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A Lua library for peripheral I/O in Linux
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: lua-periphery-2.4.2.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   lua-periphery is a library for GPIO, LED, PWM, SPI, I2C, MMIO, and
+  Serial peripheral I/O interface access in userspace Linux.
+https://github.com/vsergeev/lua-periphery
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

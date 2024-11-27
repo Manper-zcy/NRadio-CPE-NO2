@@ -1,0 +1,52 @@
+Source-Makefile: package/feeds/packages/GoQuiet/Makefile
+Build-Depends: golang/host
+
+Package: gq-client
+Submenu: Web Servers/Proxies
+Version: 1.2.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A Shadowsocks obfuscation plugin (gq-client)
+Maintainer: 
+Source: GoQuiet-1.2.2.tar.xz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A Shadowsocks plugin that obfuscates the traffic as normal HTTPS traffic to non-blocked
+  websites through domain fronting and disguises the proxy server as a normal webserver.
+
+  This package contains the gq-client.
+https://github.com/cbeuw/GoQuiet
+
+@@
+
+Package: gq-server
+Submenu: Web Servers/Proxies
+Version: 1.2.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A Shadowsocks obfuscation plugin (gq-server)
+Maintainer: 
+Source: GoQuiet-1.2.2.tar.xz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A Shadowsocks plugin that obfuscates the traffic as normal HTTPS traffic to non-blocked
+  websites through domain fronting and disguises the proxy server as a normal webserver.
+
+  This package contains the gq-server.
+https://github.com/cbeuw/GoQuiet
+
+@@
+
+

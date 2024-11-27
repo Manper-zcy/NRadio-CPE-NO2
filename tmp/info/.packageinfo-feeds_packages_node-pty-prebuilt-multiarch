@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-pty-prebuilt-multiarch/Makefile
+Build-Depends: node/host
+
+Package: node-pty-prebuilt-multiarch
+Submenu: Node.js
+Version: 0.10.1-pre.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Fork pseudoterminals in Node.JS
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-pty-prebuilt-multiarch-0.10.1-pre.5.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This project is a parallel fork of node-pty providing prebuilt packages for certain Node.js and Electron versions.
+https://www.npmjs.com/package/node-pty-prebuilt-multiarch
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

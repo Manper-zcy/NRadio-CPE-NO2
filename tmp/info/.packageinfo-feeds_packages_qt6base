@@ -1,0 +1,405 @@
+Source-Makefile: package/feeds/packages/qt6base/Makefile
+Build-Depends: qt6base/host
+Build-Types: host
+
+Package: libQt6Concurrent
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Concurrent Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Concurrent v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Core
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libpcre2-16
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Core Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Core v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6DBus
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 DBus Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 DBus v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Gui
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6DBus +libdrm +libfreetype
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Gui Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Gui v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Network
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core +libopenssl +krb5-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Network Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Network v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6PrintSupport
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Widgets
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 PrintSupport Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 PrintSupport v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Sql
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Sql Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Sql v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Test
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Test Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Test v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Widgets
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Widgets Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Widgets v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6Xml
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Xml Library
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description:     This package provides the Qt6 Xml v6.4.3 library.
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqtuiotouchplugin
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Gui +libQt6Network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqtuiotouchplugin
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqtuiotouchplugin
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqnetworkmanager
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6DBus +libQt6Network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqnetworkmanager
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqnetworkmanager
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqminimal
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqminimal
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqminimal
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqoffscreen
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqoffscreen
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqoffscreen
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqxdgdesktopportal
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Gui
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqxdgdesktopportal
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqxdgdesktopportal
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqsqlite
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Sql
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqsqlite
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqsqlite
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqcertonlybackend
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqcertonlybackend
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqcertonlybackend
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: qt6-plugin-libqopensslbackend
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib +libQt6Network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6 Plugin libqopensslbackend
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Description: Qt6 Plugin libqopensslbackend
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+Package: libQt6
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!(arc||TARGET_gemini) +libatomic +libdouble-conversion +libstdcpp +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Qt6
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qtbase-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Hidden: 1
+Description: Qt6
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+

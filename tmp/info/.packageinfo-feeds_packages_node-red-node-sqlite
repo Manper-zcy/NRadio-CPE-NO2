@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-node-sqlite/Makefile
+Build-Depends: node/host
+
+Package: node-red-node-sqlite
+Submenu: Node.js
+Version: 1.1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-sqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A sqlite node for Node-RED
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-node-sqlite-1.1.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A Node-Red node to read and write a local sqlite database.
+https://flows.nodered.org/node/node-red-node-sqlite
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

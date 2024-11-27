@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-onoff/Makefile
+Build-Depends: node/host
+
+Package: node-onoff
+Submenu: Node.js
+Version: 6.0.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-epoll
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: GPIO access and interrupt detection with JavaScript
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: onoff-6.0.3.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  GPIO access and interrupt detection with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, or BeagleBone Black
+https://www.npmjs.org/package/onoff
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

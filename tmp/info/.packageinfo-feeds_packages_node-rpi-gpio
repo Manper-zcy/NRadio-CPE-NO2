@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-rpi-gpio/Makefile
+Build-Depends: node/host
+
+Package: node-rpi-gpio
+Submenu: Node.js
+Version: 2.1.7-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-epoll
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Control Raspberry Pi GPIO pins with node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: rpi-gpio-2.1.7.tgz
+License: MIT
+LicenseFiles: MIT-LICENSE.txt
+Type: ipkg
+Description:  Control Raspberry Pi GPIO pins with node.js
+https://www.npmjs.org/package/rpi-gpio
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

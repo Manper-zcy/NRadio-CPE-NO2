@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-megahash/Makefile
+Build-Depends: node/host
+
+Package: node-megahash
+Submenu: Node.js
+Version: 1.0.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A super-fast C++ hash table with Node.js wrapper.
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: megahash-1.0.5.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  MegaHash is a super-fast C++ hash table with a Node.js wrapper, capable of storing over 1 billion keys, has read/write speeds above 500,000 keys per second (depending on CPU speed and total keys in hash), and relatively low memory overhead. This module is designed primarily as a replacement for ES6 Maps, which seem to crash Node.js after about 15 million keys.
+https://www.npmjs.org/package/megahash
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

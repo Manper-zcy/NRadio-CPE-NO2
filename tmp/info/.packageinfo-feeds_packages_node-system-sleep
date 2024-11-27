@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-system-sleep/Makefile
+Build-Depends: node/host
+
+Package: node-system-sleep
+Submenu: Node.js
+Version: 1.3.7-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-deasync-promise
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A real and better system sleep()
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: system-sleep-1.3.7.tgz
+License: none
+Type: ipkg
+Description:  A real and better system sleep() for Node. Works on every platform.
+https://www.npmjs.com/package/system-sleep
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

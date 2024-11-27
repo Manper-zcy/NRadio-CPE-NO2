@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-bignum/Makefile
+Build-Depends: node/host
+
+Package: node-bignum
+Submenu: Node.js
+Version: 0.13.1-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Arbitrary precision integral arithmetic for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: bignum-0.13.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Arbitrary precision integral arithmetic for Node.js using OpenSSL.
+https://www.npmjs.org/package/bignum
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

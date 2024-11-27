@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-serialport/Makefile
+Build-Depends: node/host
+
+Package: node-serialport
+Submenu: Node.js
+Version: 12.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-serialport-bindings-cpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node.js package to access serial ports
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: serialport-12.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Node.js package to access serial ports. Welcome your robotic javascript overlords. Better yet, program them!
+https://www.npmjs.org/package/serialport
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

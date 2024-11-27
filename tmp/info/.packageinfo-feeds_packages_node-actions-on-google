@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-actions-on-google/Makefile
+Build-Depends: node/host
+
+Package: node-actions-on-google
+Submenu: Node.js
+Version: 3.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Actions On Google Client Library
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: actions-on-google-3.0.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This Actions On Google client library makes it easy to create your apps for the Google Assistant. The client library supports both the Actions SDK webhook and Dialogflow fulfillment.
+https://www.npmjs.org/package/actions-on-google
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

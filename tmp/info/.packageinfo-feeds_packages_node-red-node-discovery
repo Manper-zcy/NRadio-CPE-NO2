@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-node-discovery/Makefile
+Build-Depends: node/host
+
+Package: node-red-node-discovery
+Submenu: Node.js
+Version: 0.0.23-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-mdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A Node-RED node to discover nearby services
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-node-discovery-0.0.23.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A Node-RED node that uses Bonjour / Avahi to discover local network services such as iTunes libraries, printers, etc.
+https://flows.nodered.org/node/node-red-node-discovery
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

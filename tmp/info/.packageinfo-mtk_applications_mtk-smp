@@ -1,0 +1,22 @@
+Source-Makefile: package/mtk/applications/mtk-smp/Makefile
+
+Package: mtk-smp
+Submenu: Applications
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: MTK Properties
+Category: MTK Properties
+Repository: base
+Title: Setup mtk smp settings
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: Setup mtk smp settings
+
+@@
+
+

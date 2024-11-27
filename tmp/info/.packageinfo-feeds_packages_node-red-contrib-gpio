@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-contrib-gpio/Makefile
+Build-Depends: node/host
+
+Package: node-red-contrib-gpio
+Submenu: Node.js
+Version: 0.51.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-johnny-five +node-mqtt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: nodes for using johnny-five and IO plugins
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-contrib-gpio-0.51.0.tgz
+License: MIT
+LicenseFiles: License.md
+Type: ipkg
+Description:  A set of input and output nodes for controlling General Purpose Input and Outputs (GPIOs) though the use of johnny-five I/O Plugins as well as running johnny-five scripts!
+https://flows.nodered.org/node/node-red-contrib-gpio
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

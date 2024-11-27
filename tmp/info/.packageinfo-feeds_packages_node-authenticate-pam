@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-authenticate-pam/Makefile
+Build-Depends: node/host
+
+Package: node-authenticate-pam
+Submenu: Node.js
+Version: 1.0.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libpam
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Asynchronous PAM authentication for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: authenticate-pam-1.0.5.tgz
+License: MIT
+LicenseFiles: MIT-LICENSE.txt
+Type: ipkg
+Description:  Asynchronous PAM authentication for Node.js
+https://www.npmjs.org/package/authenticate-pam
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

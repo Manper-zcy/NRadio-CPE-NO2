@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-level/Makefile
+Build-Depends: node/host
+
+Package: node-level
+Submenu: Node.js
+Version: 8.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-classic-level
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Fast & simple storage - a Node.js-style LevelDB wrapper
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: level-8.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)
+https://www.npmjs.org/package/level
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

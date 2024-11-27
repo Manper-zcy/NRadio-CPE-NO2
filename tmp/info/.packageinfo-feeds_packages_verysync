@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/packages/verysync/Makefile
+
+Package: verysync
+Version: 2.17.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||mips||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A efficient data transmission tool
+Maintainer: 
+Source: verysync-linux--v2.17.0.tar.gz
+Type: ipkg
+Description: A efficient data transmission tool
+http://www.verysync.com
+
+@@
+
+

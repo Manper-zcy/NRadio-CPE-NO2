@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/packages/uugamebooster/Makefile
+
+Package: uugamebooster
+Version: 3.15.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||mipsel||x86_64) +kmod-tun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: NetEase UU Game Booster
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: uugamebooster-3.15.0-.tar.gz
+License: Proprietary
+Type: ipkg
+Description:   NetEase's UU Game Booster Accelerates Triple-A Gameplay and Market.
+https://uu.163.com
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

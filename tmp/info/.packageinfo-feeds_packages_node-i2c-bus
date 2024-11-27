@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-i2c-bus/Makefile
+Build-Depends: node/host
+
+Package: node-i2c-bus
+Submenu: Node.js
+Version: 5.2.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: I2C serial bus access with JavaScript
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: i2c-bus-5.2.3.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  I2C serial bus access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison. All methods have asynchronous and synchronous forms
+https://www.npmjs.org/package/i2c-bus
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

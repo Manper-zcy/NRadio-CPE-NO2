@@ -1,0 +1,127 @@
+Source-Makefile: package/feeds/luci/luci-app-passwall/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-passwall
+Submenu: 3. Applications
+Version: 4.68-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +coreutils +coreutils-base64 +coreutils-nohup +curl +chinadns-ng +dns2socks +dns2tcp +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +microsocks +resolveip +tcping +unzip +ipset +ipt2socks +kmod-ipt-nat +iptables-mod-conntrack-extra +iptables-mod-iprange +iptables-mod-tproxy +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_Haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_Hysteria:hysteria +PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy:naiveproxy +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server:shadowsocks-libev-ss-server +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client:shadowsocks-rust-sslocal +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server:shadowsocks-rust-ssserver +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client:shadowsocksr-libev-ssr-redir +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server:shadowsocksr-libev-ssr-server +PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs:simple-obfs +PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO:trojan-go +PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus:trojan-plus +PACKAGE_luci-app-passwall_INCLUDE_tuic_client:ipt2socks +PACKAGE_luci-app-passwall_INCLUDE_tuic_client:tuic-client +PACKAGE_luci-app-passwall_INCLUDE_V2ray:v2ray-core +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata:v2ray-geoip +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata:v2ray-geosite +PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin:v2ray-plugin +PACKAGE_luci-app-passwall_INCLUDE_Xray:xray-core +PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin:xray-plugin
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: LuCI support for PassWall
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for PassWall
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+Config:
+menu "Configuration"
+
+config PACKAGE_luci-app-passwall_INCLUDE_Brook
+	bool "Include Brook"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_Haproxy
+	bool "Include Haproxy"
+	default y if aarch64||arm||i386||x86_64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Hysteria
+	bool "Include Hysteria"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy
+	bool "Include NaiveProxy"
+	depends on !(arc||(arm&&TARGET_gemini)||armeb||mips||mips64||powerpc)
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client
+	bool "Include Shadowsocks Libev Client"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server
+	bool "Include Shadowsocks Libev Server"
+	default y if aarch64||arm||i386||x86_64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
+	bool "Include Shadowsocks Rust Client"
+	depends on aarch64||arm||i386||mips||mipsel||x86_64
+	default y if aarch64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
+	bool "Include Shadowsocks Rust Server"
+	depends on aarch64||arm||i386||mips||mipsel||x86_64
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
+	bool "Include ShadowsocksR Libev Client"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
+	bool "Include ShadowsocksR Libev Server"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs
+	bool "Include Simple-Obfs (Shadowsocks Plugin)"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO
+	bool "Include Trojan-GO"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus
+	bool "Include Trojan-Plus"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_tuic_client
+	bool "Include tuic-client"
+	depends on aarch64||arm||x86_64||TARGET_x86_generic
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray
+	bool "Include V2ray"
+	default y if aarch64||arm||i386||x86_64
+
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata
+	bool "Include V2ray_Geodata"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin
+	bool "Include V2ray-Plugin (Shadowsocks Plugin)"
+	default y if aarch64||arm||i386||x86_64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Xray
+	bool "Include Xray"
+	default y if aarch64||arm||i386||x86_64
+
+config PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin
+	bool "Include Xray-Plugin (Shadowsocks Plugin)"
+	default n
+
+endmenu
+@@
+
+Package: luci-i18n-passwall-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-passwall
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-passwall - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-passwall - 简体中文 (Chinese Simplified)
+
+@@
+
+

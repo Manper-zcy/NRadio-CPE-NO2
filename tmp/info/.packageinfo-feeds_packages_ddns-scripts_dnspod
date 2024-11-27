@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/packages/ddns-scripts_dnspod/Makefile
+
+Package: ddns-scripts-dnspod-com
+Submenu: IP Addresses and Names
+Version: 1.0.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +wget-ssl +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: DDNS extension for Dnspod.com
+Maintainer: Small_5
+Source: 
+License: GPLv2
+Type: ipkg
+Description:   Dynamic DNS Client scripts extension for Dnspod.com
+Small_5
+@@
+
+

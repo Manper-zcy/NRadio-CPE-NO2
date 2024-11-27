@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/luci/luci-app-xunlei/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-xunlei
+Submenu: 3. Applications
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @arm +wget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: LuCI Support for Xware downloading app.
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI Support for Xware downloading app.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

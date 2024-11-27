@@ -1,0 +1,136 @@
+Source-Makefile: package/feeds/packages/cups/Makefile
+
+Package: cups
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libusb-1.0 +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Common UNIX Printing System (daemon)
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description:   Common UNIX Printing System (daemon)
+http://www.cups.org/
+
+@@
+
+Package: libcups
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpng +libjpeg +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Common UNIX Printing System - Core library
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - Core library
+http://www.cups.org/
+
+@@
+
+Package: libcupsimage
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Common UNIX Printing System - Image library
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - Image library
+http://www.cups.org/
+
+@@
+
+Package: cups-bsd
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Common UNIX Printing System - BSD commands (old)
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - BSD commands (old)
+http://www.cups.org/
+
+@@
+
+Package: cups-client
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Common UNIX Printing System - Client commands
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - Client commands
+http://www.cups.org/
+
+@@
+
+Package: cups-filters
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Common UNIX Printing System - Filter
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - Filter
+http://www.cups.org/
+
+@@
+
+Package: cups-ppdc
+Submenu: Printing
+Version: 2.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Common UNIX Printing System - PPDC utils
+Maintainer: 
+Source: cups-2.3.3-source.tar.gz
+Type: ipkg
+Description: Common UNIX Printing System - PPDC utils
+http://www.cups.org/
+
+@@
+
+

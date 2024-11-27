@@ -1,0 +1,37 @@
+Source-Makefile: package/emortal/automount/Makefile
+
+Package: automount
+Version: 0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +block-mount +e2fsprogs +kmod-usb-storage +kmod-usb-storage-extras +!TARGET_ramips:kmod-usb-storage-uas +kmod-fs-ext4 +kmod-fs-exfat +kmod-fs-vfat +ntfs3-mount
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Mount autoconfig hotplug script.
+Maintainer: Lean
+Source: 
+Type: ipkg
+Description: Mount autoconfig hotplug script.
+Lean
+@@
+
+Package: ntfs3-mount
+Submenu: Filesystem
+Version: 0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-ntfs3
+Conflicts: ntfs-3g
+Menu-Depends: 
+Provides: 
+Build-Variant: ntfs3-mount
+Section: utils
+Category: Utilities
+Title: NTFS mount script for Paragon NTFS3 driver
+Maintainer: 
+Source: 
+Type: ipkg
+Description: NTFS mount script for Paragon NTFS3 driver
+
+@@
+
+

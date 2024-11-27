@@ -1,0 +1,38 @@
+config channel 'cpe'
+	option model 'MT5700M-CN'
+
+config rule
+	option model 'MT5700M-CN'
+	option server '192.168.8.1'
+	option port '20249'
+	option proto 'tcp'
+
+config rule
+	option model 'NU313-M2'
+	option server '192.168.200.1'
+	option port '10080'
+	option proto 'tcp'
+
+config rule
+	option model 'RM520N-CN'
+	option server '192.168.225.1'
+	option port '1555'
+	option proto 'tcp'
+
+config rule
+	option model 'RM520N-GL'
+	option server '192.168.225.1'
+	option port '1555'
+	option proto 'tcp'
+
+config rule
+	option model 'RM500Q-CNS'
+	option server '192.168.225.1'
+	option port '1555'
+	option proto 'tcp'
+
+config rule
+	option model 'RM500U-CNV'
+	option server '192.168.42.1'
+	option port '5000'
+	option proto 'tcp'

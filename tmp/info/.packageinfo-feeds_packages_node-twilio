@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-twilio/Makefile
+Build-Depends: node/host
+
+Package: node-twilio
+Submenu: Node.js
+Version: 4.18.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A Twilio helper library
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: twilio-4.18.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A Twilio helper library
+https://www.npmjs.org/package/twilio
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

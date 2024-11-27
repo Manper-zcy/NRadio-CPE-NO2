@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-typescript/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-typescript
+Submenu: Node.js
+Version: 5.2.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A language for application-scale JavaScript
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: typescript-5.2.2.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  TypeScript is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript.
+https://www.typescriptlang.org/
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

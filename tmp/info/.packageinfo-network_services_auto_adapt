@@ -1,0 +1,21 @@
+Source-Makefile: package/network/services/auto_adapt/Makefile
+
+Package: auto_adapt
+Version: 1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: auto_adapt demo
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:  WAN/LAN auto adapt demo for ac22
+
+@@
+
+

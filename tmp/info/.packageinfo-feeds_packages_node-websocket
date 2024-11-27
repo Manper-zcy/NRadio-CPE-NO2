@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-websocket/Makefile
+Build-Depends: node/host
+
+Package: node-websocket
+Submenu: Node.js
+Version: 1.0.34-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bufferutil +node-utf-8-validate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: WebSocket Client & Server Implementation for Node
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: websocket-1.0.34.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.
+https://www.npmjs.org/package/websocket
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

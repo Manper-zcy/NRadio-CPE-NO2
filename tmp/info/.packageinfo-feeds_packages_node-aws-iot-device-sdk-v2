@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-aws-iot-device-sdk-v2/Makefile
+Build-Depends: node/host
+
+Package: node-aws-iot-device-sdk-v2
+Submenu: Node.js
+Version: 1.16.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-aws-crt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: AWS IoT Device SDK for JavaScript v2
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: aws-iot-device-sdk-v2-1.16.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This SDK is built on the AWS Common Runtime, a collection of libraries (aws-c-common, aws-c-io, aws-c-mqtt, aws-c-http, aws-c-cal ...) written in C to be cross-platform, high-performance, secure, and reliable. The libraries are bound to JS by the awscrt package.
+https://www.npmjs.com/package/aws-iot-device-sdk-v2
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/ice/Makefile
+
+Package: kmod-ice-vendor
+Submenu: Network Devices
+Version: <LINUX_VERSION>+1.12.6--1
+Depends: @PCI_SUPPORT +kmod-ptp @TARGET_x86
+Conflicts: kmod-ice
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Controller E810 Family support (vendor driver)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ice-1.12.6.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Kernel modules for Intel(R) Ethernet Controller E810 Series
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

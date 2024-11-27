@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-firmata/Makefile
+Build-Depends: node/host
+
+Package: node-firmata
+Submenu: Node.js
+Version: 2.3.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-serialport
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: JavaScript implementation of the Firmata protocol
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: firmata-2.3.0.tgz
+License: MIT
+LicenseFiles: readme.md
+Type: ipkg
+Description:  Firmata protocol implementation for programmatic interaction with Arduino and Arduino compatible development boards
+https://www.npmjs.com/package/firmata
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

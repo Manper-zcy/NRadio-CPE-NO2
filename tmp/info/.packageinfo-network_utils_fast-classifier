@@ -1,0 +1,39 @@
+Source-Makefile: package/network/utils/fast-classifier/Makefile
+
+Package: kmod-fast-classifier
+Submenu: Network Support
+Version: <LINUX_VERSION>-1
+Depends: +kmod-ipt-conntrack +kmod-shortcut-fe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for FAST Classifier
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y CONFIG_NF_CONNTRACK_MARK=y
+Description:   FAST Classifier talks to SFE to make decisions about offloading connections
+
+@@
+
+Package: fast-classifier-example
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fast-classifier +libnl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Example user space program for fast-classifier
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Example user space program that communicates with fast
+  classifier kernel module.
+
+@@
+
+

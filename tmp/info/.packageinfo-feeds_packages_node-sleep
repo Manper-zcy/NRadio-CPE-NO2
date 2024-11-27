@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-sleep/Makefile
+Build-Depends: node/host
+
+Package: node-sleep
+Submenu: Node.js
+Version: 6.3.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Add sleep() and usleep() to nodejs
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: sleep-6.3.0.tgz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  These calls will block execution of all JavaScript by halting Node.js' event loop!
+https://www.npmjs.org/package/sleep
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

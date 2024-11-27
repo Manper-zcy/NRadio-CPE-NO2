@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-mdns/Makefile
+Build-Depends: node/host
+
+Package: node-mdns
+Submenu: Node.js
+Version: 2.7.2-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libavahi-compat-libdnssd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: multicast DNS service discovery
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: mdns-2.7.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  mdns adds multicast DNS service discovery, also known as zeroconf or bonjour to Node.js. It provides an object based interface to announce and browse services on the local network
+https://www.npmjs.org/package/mdns
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

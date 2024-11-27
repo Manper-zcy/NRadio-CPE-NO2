@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-zigbee2mqtt/Makefile
+Build-Depends: node/host node-clean-modules/host
+
+Package: node-zigbee2mqtt
+Submenu: Node.js
+Version: 1.33.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bufferutil +node-utf-8-validate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Zigbee to MQTT bridge using Zigbee-herdsman
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: zigbee2mqtt-1.33.1.tgz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Allows you to use your Zigbee devices without the vendor's bridge or gateway. It bridges events and allows you to control your Zigbee devices via MQTT. In this way you can integrate your Zigbee devices with whatever smart home infrastructure you are using.
+https://github.com/Koenkk/zigbee2mqtt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

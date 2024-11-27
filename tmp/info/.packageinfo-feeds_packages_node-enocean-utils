@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-enocean-utils/Makefile
+Build-Depends: node/host
+
+Package: node-enocean-utils
+Submenu: Node.js
+Version: 0.5.1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-serialport
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: The Node.js module for EnOcean devices
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-enocean-utils-0.5.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The node-enocean-utils is a Node.js module which allows you to get and analyze telegrams came from EnOcean devices via a gateway such as USB 300/300U/400J or EnOcean Pi.
+https://www.npmjs.org/package/node-enocean-utils
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

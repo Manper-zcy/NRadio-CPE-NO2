@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-zwave-js/Makefile
+Build-Depends: node/host
+
+Package: node-zwave-js
+Submenu: Node.js
+Version: 12.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bufferutil +node-utf-8-validate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Z-Wave driver written entirely in JavaScript/TypeScript
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: zwave-js-12.1.1.tgz
+License: MIT
+Type: ipkg
+Description:  Z-Wave driver written entirely in JavaScript/TypeScript
+https://www.npmjs.org/package/zwave-js
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

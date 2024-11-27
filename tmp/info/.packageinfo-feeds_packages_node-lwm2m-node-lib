@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-lwm2m-node-lib/Makefile
+Build-Depends: node/host
+
+Package: node-lwm2m-node-lib
+Submenu: Node.js
+Version: 1.4.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Library for building OMA Lightweight M2M
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: lwm2m-node-lib-1.4.0.tgz
+License: AGPL-3.0
+Type: ipkg
+Description:  The Open Mobile Alliance Lightweight M2M protocol is a machine to machine communication protocol built over COAP, and meant to communicate resource constrained devices. The protocol defines two roles for the devices: a Lightweight M2M Client (the constrained device) and a Lightweight M2M Server (meant to consume the device data and control its execution).
+https://www.npmjs.org/package/lwm2m-node-lib
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

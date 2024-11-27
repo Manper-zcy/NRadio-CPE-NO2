@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/packages/ootoc/Makefile
+
+Package: ootoc
+Version: 2.2.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libyaml-cpp +libtar +spdlog
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Repository: packages
+Title: opkg over tar over curl
+Maintainer: ElonH <elonhhuang@gmail.com>
+Source: ootoc-2.2.3.tar.xz
+Type: ipkg
+Description: 	opkg over tar over curl
+https://github.com/msgpack/ootoc
+ElonH <elonhhuang@gmail.com>
+@@
+
+

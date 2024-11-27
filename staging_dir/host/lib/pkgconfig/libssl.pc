@@ -1,0 +1,13 @@
+#libssl pkg-config source file
+
+prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+exec_prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: LibreSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.4.3
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}

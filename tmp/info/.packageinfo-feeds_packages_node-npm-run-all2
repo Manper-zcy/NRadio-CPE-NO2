@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-npm-run-all2/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-npm-run-all2
+Submenu: Node.js
+Version: 6.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A CLI tool to run multiple npm-scripts in parallel or sequential.
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: npm-run-all2-6.1.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A CLI tool to run multiple npm-scripts in parallel or sequential. (Maintainence fork)
+https://www.npmjs.com/package/npm-run-all2
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

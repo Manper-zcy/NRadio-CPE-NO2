@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-hashmap/Makefile
+Build-Depends: node/host
+
+Package: node-hashmap
+Submenu: Node.js
+Version: 2.4.0-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: HashMap Class for JavaScript
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: hashmap-2.4.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This project provides a HashMap class that works both on Node.js and the browser. HashMap instances store key/value pairs allowing keys of any type
+https://www.npmjs.org/package/hashmap
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

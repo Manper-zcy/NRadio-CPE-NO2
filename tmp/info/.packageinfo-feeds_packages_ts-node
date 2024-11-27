@@ -1,0 +1,26 @@
+Source-Makefile: package/feeds/packages/ts-node/Makefile
+Build-Depends: node/host
+
+Package: ts-node
+Submenu: Node.js
+Version: 10.9.1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-npm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: TypeScript execution environment and REPL for node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ts-node-10.9.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  ts-node is a TypeScript execution engine and REPL for Node.js.
+ It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without precompiling. This is accomplished by hooking node's module loading APIs, enabling it to be used seamlessly alongside other Node.js tools and libraries.
+https://typestrong.org/ts-node/
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

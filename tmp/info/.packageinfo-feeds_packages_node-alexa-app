@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-alexa-app/Makefile
+Build-Depends: node/host
+
+Package: node-alexa-app
+Submenu: Node.js
+Version: 4.2.3-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: To simplify the development of Alexa skills
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: alexa-app-4.2.3.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  A Node module to simplify the development of Alexa skills (applications.)
+https://www.npmjs.org/package/alexa-app
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

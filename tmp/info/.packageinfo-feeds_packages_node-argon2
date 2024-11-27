@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-argon2/Makefile
+Build-Depends: node/host
+
+Package: node-argon2
+Submenu: Node.js
+Version: 0.31.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: An Argon2 library for Node
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: argon2-0.31.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Bindings to the reference Argon2 implementation.
+https://www.npmjs.com/package/argon2
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

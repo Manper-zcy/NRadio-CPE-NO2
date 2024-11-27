@@ -1,0 +1,30 @@
+{
+	"admin/system/ttyd": {
+		"title": "连接终端",
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-ttyd" ],
+			"uci": { "ttyd": true }
+		}
+	},
+
+	"admin/system/ttyd/ttyd": {
+		"title": "TTYD终端",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "ttyd/term"
+		}
+	},
+
+	"admin/system/ttyd/config": {
+		"title": "TTYD终端设置",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "ttyd/config"
+		}
+	}
+}

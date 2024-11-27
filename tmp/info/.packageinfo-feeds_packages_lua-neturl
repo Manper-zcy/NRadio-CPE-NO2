@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/lua-neturl/Makefile
+
+Package: lua-neturl
+Submenu: Lua
+Version: 1.1-1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: URL and Query string parser, builder, normalizer for Lua
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: neturl-1.1-1.tar.gz
+License: MIT
+Type: ipkg
+Description:   This small Lua library provides a few functions to parse URL with
+  querystring and build new URL easily.
+https://github.com/golgote/neturl
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

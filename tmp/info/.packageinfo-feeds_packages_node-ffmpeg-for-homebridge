@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-ffmpeg-for-homebridge/Makefile
+Build-Depends: node/host
+
+Package: node-ffmpeg-for-homebridge
+Submenu: Node.js
+Version: 2.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +ffmpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: ffmpeg for homebridge
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ffmpeg-for-homebridge-2.1.1.tgz
+License: none
+Type: ipkg
+Description:  Static ffmpeg binaries for Homebridge with support for audio (libfdk-aac) and hardware decoding (h264_omx).
+https://www.npmjs.com/package/ffmpeg-for-homebridge
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

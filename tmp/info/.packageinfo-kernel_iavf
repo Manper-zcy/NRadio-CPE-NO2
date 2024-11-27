@@ -1,0 +1,24 @@
+Source-Makefile: package/kernel/iavf/Makefile
+
+Package: kmod-iavf-vendor
+Submenu: Network Devices
+Version: <LINUX_VERSION>+4.9.1--1
+Depends: @PCI_SUPPORT +kmod-i40e-vendor
+Conflicts: kmod-iavf
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) Ethernet Adaptive Virtual Function support (vendor driver)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: iavf-4.9.1.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Kernel modules for Intel XL710,
+          X710, X722, XXV710, and all devices advertising support for
+          Intel Ethernet Adaptive Virtual Function devices.
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

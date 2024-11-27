@@ -1,0 +1,52 @@
+Source-Makefile: package/feeds/packages/you-get/Makefile
+
+Package: you-get
+Version: 0.4.1650-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates +ffmpeg +python3 +python3-email +python3-xml +python3-codecs +python3-ctypes +python3-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: Dumb downloader that scrapes the web
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: you-get-0.4.1650.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   You-Get is a tiny command-line utility to download
+  media contents (videos, audios, images) from the Web,
+  in case there is no other handy way to do it.
+https://you-get.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: you-get-src
+Version: 0.4.1650-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: Dumb downloader that scrapes the web (sources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: you-get-0.4.1650.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       You-Get is a tiny command-line utility to download
+  media contents (videos, audios, images) from the Web,
+  in case there is no other handy way to do it.
+
+    This package contains the Python source files for you-get.
+https://you-get.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    depends on PACKAGE_you-get
+@@
+
+

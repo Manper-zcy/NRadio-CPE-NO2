@@ -1,0 +1,39 @@
+Source-Makefile: package/feeds/packages/ua2f/Makefile
+
+Package: ua2f
+Submenu: Routing and Redirection
+Version: 4.4.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +iptables-mod-conntrack-extra +iptables-mod-filter +iptables-mod-nfqueue +libnetfilter-conntrack +libnetfilter-queue
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Change User-Agent to Fwords
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: UA2F-4.4.1.tar.gz
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Change User-agent to Fwords to prevent being checked by Dr.Com.
+https://github.com/Zxilly/UA2F
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+  if PACKAGE_ua2f
+	config UA2F_CUSTOM_USER_AGENT
+	bool "Enable custom User-Agent"
+	help
+	  Enable this option to use a custom User-Agent string.
+
+	config UA2F_USER_AGENT_STRING
+	string "Custom User-Agent string"
+	depends on UA2F_CUSTOM_USER_AGENT
+	default "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.68"
+	help
+	  Specify the custom User-Agent string to use when UA2F_CUSTOM_USER_AGENT is enabled.
+   endif
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/lux/Makefile
+Build-Depends: golang/host
+
+Package: lux
+Version: 0.19.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ffmpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: A fast, simple and clean video downloader
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: lux-0.19.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: A fast, simple and clean video downloader
+https://github.com/iawia002/lux
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

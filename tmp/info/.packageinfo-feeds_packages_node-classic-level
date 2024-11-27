@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-classic-level/Makefile
+Build-Depends: node/host
+
+Package: node-classic-level
+Submenu: Node.js
+Version: 1.3.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-leveldown
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: An abstract-level database backed by LevelDB
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: classic-level-1.3.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  An abstract-level database backed by LevelDB. The successor to leveldown with builtin encodings, sublevels, events, promises and support of Uint8Array.
+https://www.npmjs.org/package/classic-level
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

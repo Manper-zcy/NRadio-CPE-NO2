@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-dashboard/Makefile
+Build-Depends: node/host
+
+Package: node-red-dashboard
+Submenu: Node.js
+Version: 3.6.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A set of dashboard nodes for Node-RED
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-dashboard-3.6.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This module provides a set of nodes in Node-RED to quickly create a live data dashboard.a
+https://flows.nodered.org/node/node-red-dashboard
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

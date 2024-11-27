@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/packages/dvb-firmware/Makefile
+
+Package: dvb-firmware
+Version: 1.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: packages
+Title: dvb-firmware megapack
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   dvb-firmware is specialised software that is both specific to some hardware
+  and also integral for its proper functioning.
+
+@@
+
+

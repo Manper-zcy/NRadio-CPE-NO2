@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/vlmcsd/Makefile
+
+Package: vlmcsd
+Version: svn1113-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A KMS Emulator in C
+Maintainer: fuyumi <280604399@qq.com>
+Source: vlmcsd-svn1113.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	KMS Emulator in C (currently runs on Linux including Android, FreeBSD,
+	Solaris, Minix, Mac OS, iOS, Windows with or without Cygwin)
+https://github.com/Wind4/vlmcsd
+fuyumi <280604399@qq.com>
+@@
+
+

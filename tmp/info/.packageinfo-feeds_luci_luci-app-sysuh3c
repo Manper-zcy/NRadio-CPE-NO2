@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/luci/luci-app-sysuh3c/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-sysuh3c
+Submenu: 3. Applications
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sysuh3c
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: SYSU H3C 802.1X Client for LuCI
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:    This package contains LuCI configuration pages for SYSU H3C.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

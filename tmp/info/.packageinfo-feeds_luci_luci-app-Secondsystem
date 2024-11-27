@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/luci/luci-app-Secondsystem/Makefile
+
+Package: luci-app-Secondsystem
+Submenu: 3. Applications
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: Luci App Secondsystem
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Luci App Secondsystem
+
+@@
+
+

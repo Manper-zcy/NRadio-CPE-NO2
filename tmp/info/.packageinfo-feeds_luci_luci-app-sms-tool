@@ -1,0 +1,80 @@
+Source-Makefile: package/feeds/luci/luci-app-sms-tool/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-sms-tool
+Submenu: 3. Applications
+Version: 1.9.7
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sms-tool +kmod-usb-serial +kmod-usb-serial-option +comgt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: LuCI Support for sms-tool
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description:    LuCI interface for the sms-tool. The user interface supports SMS/USSD Codes/AT Commands.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-sms-tool-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-sms-tool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-sms-tool - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sms-tool - Polski (Polish)
+
+@@
+
+Package: luci-i18n-sms-tool-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-sms-tool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-sms-tool - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sms-tool - Русский (Russian)
+
+@@
+
+Package: luci-i18n-sms-tool-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-sms-tool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-sms-tool - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sms-tool - 简体中文 (Chinese Simplified)
+
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/mtk/applications/mtkhqos_util/Makefile
+
+Package: mtkhqos_util
+Submenu: Applications
+Version: 1-r0-3fa9687
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: MTK Properties
+Category: MTK Properties
+Repository: base
+Title: mtk hqos utility
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   mtk hqos util
+
+@@
+
+

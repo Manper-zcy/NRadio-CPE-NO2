@@ -1,0 +1,39 @@
+Source-Makefile: target/linux/mxs/Makefile
+Target: mxs
+Target-Board: mxs
+Target-Name: Freescale i.MX23/i.MX28
+Target-Arch: arm
+Target-Arch-Packages: arm_arm926ej-s
+Target-Features: dt ext4 gpio rtc usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: arm926ej-s
+Linux-Version: 5.4.255
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Support for Freescale i.MX23/i.MX28 boards
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd block-mount default-settings-chn kmod-ipt-raw kmod-nf-nathelper kmod-nf-nathelper-extra luci luci-app-filetransfer luci-compat luci-lib-base luci-lib-fs luci-lib-ipkg dnsmasq-full firewall iptables ipv6helper ppp ppp-mod-pppoe 
+Target-Profile: duckbill
+Target-Profile-Name: I2SE Duckbill boards
+Target-Profile-Packages: -dnsmasq -firewall -ppp -ip6tables -iptables -6relayd -mtd uboot-envtools kmod-leds-gpio -kmod-ipt-nathelper uboot-mxs-duckbill 
+Target-Profile-Description:
+	I2SE's Duckbill devices
+@@
+
+Target-Profile: olinuxino-maxi
+Target-Profile-Name: Olimex OLinuXino Maxi/Mini boards
+Target-Profile-Packages: imx-bootlets uboot-mxs-mx23_olinuxino kmod-usb-net-smsc95xx kmod-gpio-mcp23s08 kmod-leds-gpio kmod-sound-core 
+Target-Profile-Description:
+	Olimex OLinuXino Maxi/Mini boards
+@@
+
+Target-Profile: olinuxino-micro
+Target-Profile-Name: Olimex OLinuXino Micro/Nano boards
+Target-Profile-Packages: imx-bootlets uboot-mxs-mx23_olinuxino kmod-gpio-mcp23s08 kmod-leds-gpio 
+Target-Profile-Description:
+	Olimex OLinuXino Micro/Nano boards
+@@
+
+

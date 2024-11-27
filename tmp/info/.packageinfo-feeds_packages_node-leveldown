@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-leveldown/Makefile
+Build-Depends: node/host
+
+Package: node-leveldown
+Submenu: Node.js
+Version: 6.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A Node.js LevelDB binding, primary backend for LevelUP
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: leveldown-6.1.1.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  A Node.js LevelDB binding, primary backend for LevelUP
+https://www.npmjs.org/package/leveldown
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

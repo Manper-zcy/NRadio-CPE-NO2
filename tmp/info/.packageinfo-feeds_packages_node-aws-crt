@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-aws-crt/Makefile
+Build-Depends: node/host
+
+Package: node-aws-crt
+Submenu: Node.js
+Version: 1.18.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node @(x86_64||aarch64||arm||i386)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: NodeJS bindings for the AWS Common Runtime
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: aws-crt-1.18.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  NodeJS/Browser bindings for the AWS Common Runtime
+https://www.npmjs.com/package/aws-crt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

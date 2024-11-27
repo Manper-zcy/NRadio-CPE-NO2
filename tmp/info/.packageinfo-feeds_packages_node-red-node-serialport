@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-node-serialport/Makefile
+Build-Depends: node/host
+
+Package: node-red-node-serialport
+Submenu: Node.js
+Version: 1.0.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-serialport
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node-RED nodes to talk to serial ports
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-node-serialport-1.0.4.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Node-RED nodes to talk to hardware serial ports.
+https://flows.nodered.org/node/node-red-node-serialport
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

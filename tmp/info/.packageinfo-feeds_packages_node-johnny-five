@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-johnny-five/Makefile
+Build-Depends: node/host
+
+Package: node-johnny-five
+Submenu: Node.js
+Version: 2.1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-firmata +node-serialport
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: JavaScript Robotics and Hardware Programming Framework
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: johnny-five-2.1.0.tgz
+License: MIT
+Type: ipkg
+Description:  The JavaScript Robotics and Hardware Programming Framework
+https://www.npmjs.org/package/johnny-five
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

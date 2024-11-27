@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-net-ping/Makefile
+Build-Depends: node/host
+
+Package: node-net-ping
+Submenu: Node.js
+Version: 1.2.3-6
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-raw-socket
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Raw sockets for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: net-ping-1.2.3.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  This module implements ICMP Echo (ping) support for Node.js
+https://www.npmjs.com/package/net-ping
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

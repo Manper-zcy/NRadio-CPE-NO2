@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-noble/Makefile
+Build-Depends: node/host
+
+Package: node-noble
+Submenu: Node.js
+Version: 1.9.1-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bluetooth-hci-socket
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A Node.js BLE (Bluetooth low energy) central library
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: noble-1.9.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A node.js BLE (Bluetooth low energy) central library.
+https://www.npmjs.org/package/noble
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/cxxopts/Makefile
+
+Package: cxxopts
+Version: 3.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Repository: packages
+Title: Lightweight C++ command line option parser
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: cxxopts-3.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:   This is a lightweight C++ option parser library, supporting the
+  standard GNU style syntax for options.
+https://github.com/jarro2783/cxxopts
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-logfmt/Makefile
+Build-Depends: node/host
+
+Package: node-logfmt
+Submenu: Node.js
+Version: 1.3.2-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: key=value logger and parser
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: logfmt-1.3.2.tgz
+License: MIT
+Type: ipkg
+Description:  "logfmt" is the name for a key value logging convention we've adopted at Heroku,
+ This library is for both converting lines in logfmt format to objects and for logging objects to a stream in logfmt format
+https://www.npmjs.org/package/logfmt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

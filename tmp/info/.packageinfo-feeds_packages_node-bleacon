@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-bleacon/Makefile
+Build-Depends: node/host
+
+Package: node-bleacon
+Submenu: Node.js
+Version: 0.5.1-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bignum +node-bleno +node-noble-device
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Library for creating/discovering/configuring iBeacons
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: bleacon-0.5.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A Node.js library for creating, discovering, and configuring iBeacons
+https://www.npmjs.org/package/bleacon
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

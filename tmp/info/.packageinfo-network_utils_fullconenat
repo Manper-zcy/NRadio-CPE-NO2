@@ -1,0 +1,43 @@
+Source-Makefile: package/network/utils/fullconenat/Makefile
+
+Package: iptables-mod-fullconenat
+Submenu: Firewall
+Version: 2019-10-21-0cf3b48fd7d2fa81d0297d1fff12bbd0580fc435-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +kmod-ipt-fullconenat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: FULLCONENAT iptables extension
+Maintainer: Chion Tang <tech@chionlab.moe>
+Source: fullconenat-2019-10-21-0cf3b48fd7d2fa81d0297d1fff12bbd0580fc435.tar.xz
+License: GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: FULLCONENAT iptables extension
+Chion Tang <tech@chionlab.moe>
+@@
+
+Package: kmod-ipt-fullconenat
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>+2019-10-21-0cf3b48fd7d2fa81d0297d1fff12bbd0580fc435-1
+Depends: +kmod-nf-ipt +kmod-nf-nat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: FULLCONENAT netfilter module
+Maintainer: Chion Tang <tech@chionlab.moe>
+Source: fullconenat-2019-10-21-0cf3b48fd7d2fa81d0297d1fff12bbd0580fc435.tar.xz
+License: GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y
+Description: FULLCONENAT netfilter module
+Chion Tang <tech@chionlab.moe>
+@@
+
+

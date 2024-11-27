@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/rtl8188eu/Makefile
+
+Package: kmod-rtl8188eu
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-12-19-67be0af3736adc72fbf4f234c0d1d32afa8d5d06-0
+Depends: +kmod-cfg80211 +kmod-usb-core +@DRIVER_11N_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Realtek 8188EU(S)/8188ETV support
+Maintainer: 
+Source: rtl8188eu-2022-12-19-67be0af3736adc72fbf4f234c0d1d32afa8d5d06.tar.xz
+Type: ipkg
+Description: Realtek 8188EU(S)/8188ETV support
+
+@@
+
+

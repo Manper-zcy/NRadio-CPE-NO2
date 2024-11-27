@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-rpio/Makefile
+Build-Depends: node/host
+
+Package: node-rpio
+Submenu: Node.js
+Version: 2.4.2-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: High performance GPIO/i2c/PWM/SPI module for Raspberry Pi
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: rpio-2.4.2.tgz
+License: ISC AND GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This is a high performance node.js addon which provides access to the Raspberry Pi GPIO interface, supporting regular GPIO as well as i²c, PWM, and SPI
+https://www.npmjs.org/package/rpio
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

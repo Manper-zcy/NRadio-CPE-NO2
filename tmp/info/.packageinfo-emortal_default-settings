@@ -1,0 +1,39 @@
+Source-Makefile: package/emortal/default-settings/Makefile
+
+Package: default-settings
+Version: 1.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Default Settings
+Maintainer: 
+Source: 
+License: GPL-3.0
+Type: ipkg
+Description: LuCI support for Default Settings
+
+@@
+
+Package: default-settings-chn
+Version: 1.1-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +default-settings +@LUCI_LANG_zh_Hans +luci-i18n-base-zh-cn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Default Settings (Optimize for CHN users)
+Maintainer: 
+Source: 
+License: GPL-3.0
+Type: ipkg
+Description: LuCI support for Default Settings (Optimize for CHN users)
+
+@@
+
+

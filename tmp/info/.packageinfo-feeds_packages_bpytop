@@ -1,0 +1,50 @@
+Source-Makefile: package/feeds/packages/bpytop/Makefile
+
+Package: bpytop
+Version: 1.0.68-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-psutil +python3-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Repository: packages
+Title: Python port of bashtop
+Maintainer: 
+Source: bpytop-1.0.68.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Resource monitor that shows usage and stats for
+  processor, memory, disks, network and processes.
+https://github.com/aristocratos/bpytop
+
+@@
+
+Package: bpytop-src
+Version: 1.0.68-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Repository: packages
+Title: Python port of bashtop (sources)
+Maintainer: 
+Source: bpytop-1.0.68.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       Resource monitor that shows usage and stats for
+  processor, memory, disks, network and processes.
+
+    This package contains the Python source files for bpytop.
+https://github.com/aristocratos/bpytop
+
+@@
+Config:
+    depends on PACKAGE_bpytop
+@@
+
+

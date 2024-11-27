@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/nas/unishare/Makefile
+
+Package: unishare
+Submenu: File Transfer
+Version: 1.0.1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-server +webdav2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: nas
+Title: Unified Network Shares Manager
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Description: 	Configure samba, webdav (maybe more?) in one app
+jjm2473 <jjm2473@gmail.com>
+@@
+
+

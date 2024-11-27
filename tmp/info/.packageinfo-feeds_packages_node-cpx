@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-cpx/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-cpx
+Submenu: Node.js
+Version: 1.5.0-12
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Copy file globs, watching for changes
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: cpx-1.5.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  This module provides a CLI tool like cp, but with watching
+https://www.npmjs.org/package/cpx
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-browserify/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-browserify
+Submenu: Node.js
+Version: 17.0.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: browser-side require() the node way
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: browserify-17.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  browserify will recursively analyze all the require() calls in your app in order to build a bundle you can serve up to the browser in a single <script> tag
+https://www.npmjs.org/package/browserify
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

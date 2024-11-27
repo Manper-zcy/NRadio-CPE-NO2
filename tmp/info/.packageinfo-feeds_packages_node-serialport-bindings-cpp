@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-serialport-bindings-cpp/Makefile
+Build-Depends: node/host
+
+Package: node-serialport-bindings-cpp
+Submenu: Node.js
+Version: 12.0.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: SerialPort Hardware bindings for node serialport written in c++
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: serialport-bindings-cpp-12.0.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The Bindings provide a low level interface to work with your serialport. It is possible to use them alone but it's usually easier to use them with an interface.
+https://www.npmjs.com/package/@serialport/bindings-cpp
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

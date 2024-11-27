@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-contrib-modbus/Makefile
+Build-Depends: node/host
+
+Package: node-red-contrib-modbus
+Submenu: Node.js
+Version: 5.27.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node-RED contribution package for Modbus
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-contrib-modbus-5.27.2.tgz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The all in one Modbus TCP and Serial contribution package for Node-RED. Based on modbus-serial with TCP, C701, Telnet, Serial, RTU buffered, and ASCII.
+https://flows.nodered.org/node/node-red-contrib-modbus
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

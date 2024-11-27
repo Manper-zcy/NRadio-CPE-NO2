@@ -1,0 +1,54 @@
+Source-Makefile: package/mtk/drivers/conninfra/Makefile
+$KCONFIG_FLAGS is [     ]
+EXTRA_CFLAGS=    -DEEPROM_NAME=
+
+Package: kmod-conninfra
+Menu: 1
+Submenu: Drivers
+Version: <LINUX_VERSION>+bbf588-
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: MTK Properties
+Title: Conninfra driver
+Maintainer: Kun-Ze Syue<kun-ze.syue@mediatek.com>
+Source: 
+Type: ipkg
+Description: 	Support for connectivity conninfra driver.
+Kun-Ze Syue<kun-ze.syue@mediatek.com>
+@@
+Config:
+if PACKAGE_kmod-conninfra
+	config MTK_CONNINFRA_APSOC
+	bool "Conninfra APSOC Only"
+	default n
+
+if MTK_CONNINFRA_APSOC
+choice
+	prompt "Choose APSOC Chip"
+
+	config MTK_CONNINFRA_APSOC_MT7986
+	bool "MT7986"
+
+	config MTK_CONNINFRA_APSOC_MT7981
+	bool "MT7981"
+endchoice
+
+	config CONNINFRA_EMI_SUPPORT
+	bool "EMI Support"
+	default n
+
+	config FPGA_EARLY_PORTING
+	bool "Only for FPGA Stage"
+	default n
+
+	config CONNINFRA_AUTO_UP
+	bool "Conninfra Up by Self"
+	default n
+endif
+endif
+@@
+
+

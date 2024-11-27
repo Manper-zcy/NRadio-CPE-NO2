@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-uglify-js/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-uglify-js
+Submenu: Node.js
+Version: 3.17.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: JavaScript compressor/minifier
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: uglify-js-3.17.4.tgz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  JavaScript parser, mangler/compressor and beautifier toolkit
+https://www.npmjs.org/package/uglify-js
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-levelup/Makefile
+Build-Depends: node/host
+
+Package: node-levelup
+Submenu: Node.js
+Version: 5.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-leveldown
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Fast & simple storage - a Node.js-style LevelDB wrapper
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: levelup-5.1.1.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  Fast & simple storage - a Node.js-style LevelDB wrapper
+https://www.npmjs.org/package/levelup
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

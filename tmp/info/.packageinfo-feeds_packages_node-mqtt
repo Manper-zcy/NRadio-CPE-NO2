@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-mqtt/Makefile
+Build-Depends: node/host
+
+Package: node-mqtt
+Submenu: Node.js
+Version: 5.1.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-ws
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: A library for the MQTT protocol
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: mqtt-5.1.2.tgz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:  MQTT.js is a client library for the MQTT protocol, written in JavaScript for node.js and the browser
+https://www.npmjs.org/package/mqtt
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

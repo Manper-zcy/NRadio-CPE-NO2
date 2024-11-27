@@ -1,0 +1,42 @@
+Source-Makefile: package/feeds/luci/luci-app-softethervpn5/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-softethervpn5
+Submenu: 3. Applications
+Version: 1.09
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +softethervpn5-server +softethervpn5-bridge +softethervpn5-client
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: LuCI Support for softethervpn5
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI Support for softethervpn5
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-softethervpn5-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-softethervpn5
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-softethervpn5 - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-softethervpn5 - 简体中文 (Chinese Simplified)
+
+@@
+
+

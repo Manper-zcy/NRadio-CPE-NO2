@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-lambda/Makefile
+Build-Depends: node/host
+
+Package: node-lambda
+Submenu: Node.js
+Version: 1.2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Tools for Amazon Lambda
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-lambda-1.2.0.tgz
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Command line tool for locally running and remotely deploying your node.js applications to Amazon Lambda
+https://www.npmjs.org/package/node-lambda
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

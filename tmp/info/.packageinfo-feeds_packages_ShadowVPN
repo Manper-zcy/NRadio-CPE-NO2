@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/packages/ShadowVPN/Makefile
+
+Package: ShadowVPN
+Version: 0.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +ip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A fast, safe VPN based on libsodium
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Source: ShadowVPN-0.2.0.tar.gz
+License: GPL-3.0
+LicenseFiles: COPYING
+Type: ipkg
+Description: A fast, safe VPN based on libsodium
+https://github.com/clowwindy/ShadowVPN
+clowwindy <clowwindy42@gmail.com>
+@@
+
+

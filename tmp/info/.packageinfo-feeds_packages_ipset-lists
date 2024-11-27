@@ -1,0 +1,20 @@
+Source-Makefile: package/feeds/packages/ipset-lists/Makefile
+
+Package: ipset-lists
+Version: 20181104-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Network
+Repository: packages
+Title: Service for IPSET address tables
+Maintainer: Justin Liu <rssnsj@gmail.com>
+Source: 
+Type: ipkg
+Description: Service for IPSET address tables
+Justin Liu <rssnsj@gmail.com>
+@@
+
+

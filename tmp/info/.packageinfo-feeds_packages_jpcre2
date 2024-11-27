@@ -1,0 +1,26 @@
+Source-Makefile: package/feeds/packages/jpcre2/Makefile
+Build-Depends: pcre2
+
+Package: jpcre2
+Version: 10.32.01-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Repository: packages
+Title: C++ wrapper for PCRE2 Library
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: jpcre2-10.32.01.tar.gz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:   This provides some C++ wrapper classes/functions to perform regex
+  operations such as regex match and regex replace.
+https://github.com/jpcre2/jpcre2
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

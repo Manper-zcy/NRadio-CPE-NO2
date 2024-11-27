@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/packages/iptvhelper/Makefile
+
+Package: iptvhelper
+Submenu: Routing and Redirection
+Version: 0.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset +iptables
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Scripts for configure IPTV easily
+Maintainer: Shun Li <riverscn@gmail.com>
+Source: 
+License: GPL-3.0
+Type: ipkg
+Description:   Scripts for configure IPTV easily
+Shun Li <riverscn@gmail.com>
+@@
+
+

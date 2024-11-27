@@ -1,0 +1,61 @@
+Source-Makefile: package/feeds/nas_luci/luci-app-linkease/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-linkease
+Submenu: 3. Applications
+Version: 2.1.12-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +linkease
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: nas_luci
+Title: LuCI support for linkease
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for linkease
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-linkease-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-linkease
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: nas_luci
+Title: luci-app-linkease - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-linkease - 简体中文 (Chinese Simplified)
+
+@@
+
+Package: luci-i18n-linkease-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-linkease
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: nas_luci
+Title: luci-app-linkease - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-linkease - 简体中文 (Chinese Simplified)
+
+@@
+
+

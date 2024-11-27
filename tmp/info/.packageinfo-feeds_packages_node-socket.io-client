@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-socket.io-client/Makefile
+Build-Depends: node/host
+
+Package: node-socket.io-client
+Submenu: Node.js
+Version: 4.7.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Socket.IO client
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: socket.io-client-4.7.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Socket.IO client for the browser and node.js
+https://www.npmjs.org/package/socket.io-client
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

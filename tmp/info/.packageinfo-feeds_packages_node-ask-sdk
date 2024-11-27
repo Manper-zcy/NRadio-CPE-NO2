@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-ask-sdk/Makefile
+Build-Depends: node/host
+
+Package: node-ask-sdk
+Submenu: Node.js
+Version: 2.14.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Alexa Skills Kit SDK for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ask-sdk-2.14.0.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  The ASK SDK v2 for Node.js is an open-source Alexa Skill Development Kit. ASK SDK v2 for Node.js makes it easier for you to build highly engaging skills, by allowing you to spend more time on implementing features and less on writing boiler-plate code.
+https://www.npmjs.org/package/ask-sdk
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

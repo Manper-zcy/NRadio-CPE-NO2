@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-fuse-bindings/Makefile
+Build-Depends: node/host
+
+Package: node-fuse-bindings
+Submenu: Node.js
+Version: 2.12.4-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libfuse
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Fully maintained fuse bindings for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-fuse-bindings-2.12.4.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Fully maintained fuse bindings for Node that aims to cover the entire FUSE api
+https://www.npmjs.org/package/node-fuse-bindings
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

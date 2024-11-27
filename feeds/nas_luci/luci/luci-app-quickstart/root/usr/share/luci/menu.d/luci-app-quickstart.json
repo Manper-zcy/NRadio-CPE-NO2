@@ -1,0 +1,10 @@
+{
+	"admin/quickstart/*": {
+		"title": "CPE首页",
+		"order": 1,
+		"action": {
+			"type": "template",
+			"path": "quickstart/home"
+		}
+	}
+}

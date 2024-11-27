@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-binaryjs/Makefile
+Build-Depends: node/host
+
+Package: node-binaryjs
+Submenu: Node.js
+Version: 0.2.1-14
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bufferutil +node-utf-8-validate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Binary realtime streaming made easy
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: binaryjs-0.2.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Node binary websocket streaming made easy
+https://www.npmjs.org/package/binaryjs
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

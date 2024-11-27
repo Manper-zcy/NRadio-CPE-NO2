@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-pi-spi/Makefile
+Build-Depends: node/host
+
+Package: node-pi-spi
+Submenu: Node.js
+Version: 1.2.1-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Simple async SPI library for Raspberry Pi
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: pi-spi-1.2.1.tgz
+License: BSD-2-Clause
+LicenseFiles: README.md
+Type: ipkg
+Description:  Simple asyncronous node.js SPI library for Raspberry Pi (and likely other embedded Linux platforms that provide /dev/spidevN.N).
+https://www.npmjs.org/package/pi-spi
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

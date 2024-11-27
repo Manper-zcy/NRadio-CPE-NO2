@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-ws/Makefile
+Build-Depends: node/host
+
+Package: node-ws
+Submenu: Node.js
+Version: 8.14.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bufferutil +node-utf-8-validate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: WebSocket library
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ws-8.14.2.tgz
+License: MIT
+LicenseFiles: README.md
+Type: ipkg
+Description:  Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js
+https://www.npmjs.org/package/ws
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

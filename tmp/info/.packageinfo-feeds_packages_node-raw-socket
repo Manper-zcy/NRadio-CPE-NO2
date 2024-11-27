@@ -1,0 +1,26 @@
+Source-Makefile: package/feeds/packages/node-raw-socket/Makefile
+Build-Depends: node/host
+
+Package: node-raw-socket
+Submenu: Node.js
+Version: 1.7.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Raw sockets for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: raw-socket-1.7.0.tgz
+License: MIT
+LicenseFiles: README.md
+Type: ipkg
+Description:  This module implements raw sockets for Node.js.
+ This module has been created primarily to facilitate implementation of the net-ping module.
+https://www.npmjs.org/package/raw-socket
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

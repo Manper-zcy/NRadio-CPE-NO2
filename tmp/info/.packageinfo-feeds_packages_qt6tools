@@ -1,0 +1,28 @@
+Source-Makefile: package/feeds/packages/qt6tools/Makefile
+Build-Depends/host: qt6base/host libxml2/host
+Build-Types: host
+
+Package: qt6tools
+Submenu: Qt6
+Version: 6.4.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: packages
+Title: Qt6 Tools
+Maintainer: Krypton Lee <jun.k.lee199410@outlook.com>
+Source: qttools-everywhere-src-6.4.3.tar.xz
+License: LGPL-2.1
+LicenseFiles: COPYING
+Type: ipkg
+Build-Only: 1
+Hidden: 1
+Description: Qt6 Tools
+http://qt-project.org
+Krypton Lee <jun.k.lee199410@outlook.com>
+@@
+
+

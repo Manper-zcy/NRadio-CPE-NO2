@@ -1,0 +1,48 @@
+Source-Makefile: package/feeds/packages/ykdl/Makefile
+
+Package: ykdl
+Version: 1.8.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates +ffmpeg +python3 +python3-email +python3-xml +python3-codecs +python3-ctypes +python3-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: a video downloader focus on China mainland video sites
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ykdl-1.8.2.tar.gz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description: a video downloader focus on China mainland video sites
+https://github.com/SeaHOH/ykdl
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: ykdl-src
+Version: 1.8.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: a video downloader focus on China mainland video sites (sources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ykdl-1.8.2.tar.gz
+License: MIT
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:     	a video downloader focus on China mainland video sites
+
+    This package contains the Python source files for ykdl.
+https://github.com/SeaHOH/ykdl
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    depends on PACKAGE_ykdl
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-deasync-promise/Makefile
+Build-Depends: node/host
+
+Package: node-deasync-promise
+Submenu: Node.js
+Version: 1.0.1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-deasync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Transform async functions into sync
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: deasync-promise-1.0.1.tgz
+License: ISC
+Type: ipkg
+Description:  Transforms async functions into sync with promise API
+https://www.npmjs.com/package/deasync-promise
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

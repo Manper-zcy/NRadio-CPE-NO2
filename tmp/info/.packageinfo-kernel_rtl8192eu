@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/rtl8192eu/Makefile
+
+Package: kmod-rtl8192eu
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-12-26-aeed529c77282cc0d8a2b6eb29186711e25555ce-0
+Depends: +kmod-cfg80211 +kmod-usb-core +@DRIVER_11N_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Realtek RTL8192EU support
+Maintainer: 
+Source: rtl8192eu-2022-12-26-aeed529c77282cc0d8a2b6eb29186711e25555ce.tar.xz
+Type: ipkg
+Description: Realtek RTL8192EU support
+
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-serialport-list/Makefile
+Build-Depends: node/host
+
+Package: node-serialport-list
+Submenu: Node.js
+Version: 12.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-serialport-bindings-cpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: SerialPort List
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: serialport-list-12.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The package @serialport/list will install the serialport-list cli tool which lists all available serial ports in different formats.
+https://www.npmjs.com/package/@serialport/list
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

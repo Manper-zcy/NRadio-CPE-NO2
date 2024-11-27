@@ -1,0 +1,11 @@
+prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+exec_prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: expat
+Version: 2.2.10
+Description: expat XML parser
+URL: http://www.libexpat.org
+Libs: -L${libdir} -lexpat
+Cflags: -I${includedir}

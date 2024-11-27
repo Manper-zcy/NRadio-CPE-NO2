@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-spi-device/Makefile
+Build-Depends: node/host
+
+Package: node-spi-device
+Submenu: Node.js
+Version: 3.1.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: SPI serial bus access with Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: spi-device-3.1.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  SPI serial bus access with Node.js on Linux boards like the Raspberry Pi or BeagleBone. All methods have asynchronous and synchronous forms.
+https://www.npmjs.org/package/spi-device
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

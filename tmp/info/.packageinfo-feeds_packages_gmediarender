@@ -1,0 +1,26 @@
+Source-Makefile: package/feeds/packages/gmediarender/Makefile
+
+Package: gmediarender
+Version: 2023-07-16-3a1234f8694c0f406717c34f700cb07324d29076-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +gstreamer1 +gstreamer1-utils +gst1-plugins-base +gst1-plugins-bad +gst1-plugins-good +libupnp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: Resource efficient UPnP/DLNA renderer
+Maintainer: 
+Source: gmediarender-2023-07-16-3a1234f8694c0f406717c34f700cb07324d29076.tar.xz
+Type: ipkg
+Description:   gmediarender implements the server component that provides UPnP
+  controllers a means to render media content (audio, video and images)
+  from a UPnP media server.
+
+@@
+Config:
+	select PACKAGE_gstreamer1-plugins-bad
+	select PACKAGE_gstreamer1-plugins-good
+@@
+
+

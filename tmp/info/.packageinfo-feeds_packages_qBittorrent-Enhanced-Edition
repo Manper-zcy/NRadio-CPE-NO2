@@ -1,0 +1,29 @@
+Source-Makefile: package/feeds/packages/qBittorrent-Enhanced-Edition/Makefile
+Build-Depends: qt6tools/host
+
+Package: qbittorrent-enhanced-edition
+Submenu: BitTorrent
+Version: 4.5.5.10-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libtorrent-rasterbar +libQt6Core +libQt6Network +libQt6Sql +libQt6Xml +qt6-plugin-libqopensslbackend +qt6-plugin-libqsqlite
+Conflicts: 
+Menu-Depends: 
+Provides: qbittorrent
+Section: net
+Category: Network
+Repository: packages
+Title: bittorrent client programmed in C++ / Qt
+Maintainer: 
+Source: qBittorrent-Enhanced-Edition-4.5.5.10.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   qBittorrent is a bittorrent client programmed in C++ / Qt that uses
+  libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
+  It aims to be a good alternative to all other bittorrent clients out
+  there. qBittorrent is fast, stable and provides unicode support as
+  well as many features.
+https://github.com/c0re100/qBittorrent-Enhanced-Edition
+
+@@
+
+

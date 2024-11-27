@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-hap-nodejs/Makefile
+Build-Depends: node/host
+
+Package: node-hap-nodejs
+Submenu: Node.js
+Version: 0.11.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node.js implementation of HomeKit Accessory Server
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: hap-nodejs-0.11.1.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  HAP-NodeJS is a Node.js implementation of HomeKit Accessory Server
+https://www.npmjs.org/package/hap-nodejs
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

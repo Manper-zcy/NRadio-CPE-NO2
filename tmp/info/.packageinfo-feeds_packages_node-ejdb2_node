@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-ejdb2_node/Makefile
+Build-Depends: node/host node-yarn/host
+
+Package: node-ejdb2_node
+Submenu: Node.js
+Version: 2.62.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libatomic @BROKEN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: EJDB2 Node.js native binding
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: ejdb2_node-2.62.5.tgz
+License: MIT
+Type: ipkg
+Description:  Embeddable JSON Database engine http://ejdb.org Node.js binding.
+https://www.npmjs.com/package/ejdb2_node
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

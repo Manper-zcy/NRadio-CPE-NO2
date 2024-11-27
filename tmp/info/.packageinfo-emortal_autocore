@@ -1,0 +1,37 @@
+Source-Makefile: package/emortal/autocore/Makefile
+
+Package: autocore-arm
+Version: 0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(arm||aarch64) +TARGET_bcm27xx:bcm27xx-userland +TARGET_bcm53xx:nvram +(TARGET_mediatek||TARGET_mvebu):mhz
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: arm
+Section: opt
+Category: Extra packages
+Title: ARM auto core script.
+Maintainer: CN_SZTL
+Source: 
+Type: ipkg
+Description: ARM auto core script.
+CN_SZTL
+@@
+
+Package: autocore-x86
+Version: 0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +lm-sensors +ethtool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: x86
+Section: opt
+Category: Extra packages
+Title: x86/x64 auto core loadbalance script.
+Maintainer: Lean / CN_SZTL
+Source: 
+Type: ipkg
+Description: x86/x64 auto core loadbalance script.
+Lean / CN_SZTL
+@@
+
+

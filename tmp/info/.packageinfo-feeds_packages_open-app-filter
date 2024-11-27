@@ -1,0 +1,37 @@
+Source-Makefile: package/feeds/packages/open-app-filter/Makefile
+
+Package: kmod-oaf
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>+2023-05-25-d9d8e8088c6ecdc8a2957ffe1002547a9f1c6c0d-2
+Depends: +kmod-ipt-conntrack
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Kernel
+Category: Kernel modules
+Title: open app filter kernel module
+Maintainer: 
+Source: open-app-filter-2023-05-25-d9d8e8088c6ecdc8a2957ffe1002547a9f1c6c0d.tar.xz
+Type: ipkg
+Description: open app filter kernel module
+
+@@
+
+Package: appfilter
+Version: 2023-05-25-d9d8e8088c6ecdc8a2957ffe1002547a9f1c6c0d-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libblobmsg-json +libjson-c +libpthread +libubox +libubus +libuci +kmod-oaf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: App filter userspace module
+Maintainer: 
+Source: open-app-filter-2023-05-25-d9d8e8088c6ecdc8a2957ffe1002547a9f1c6c0d.tar.xz
+Type: ipkg
+Description: App filter userspace module
+
+@@
+
+

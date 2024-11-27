@@ -1,0 +1,39 @@
+Source-Makefile: package/firmware/armbian-firmware/Makefile
+
+Package: brcmfmac-firmware-43456-sdio
+Version: 2021-05-05-761658e1701c77a0a84706754e6db1a25ee60b82-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43456 FullMac SDIO firmware
+Maintainer: 
+Source: armbian-firmware-2021-05-05-761658e1701c77a0a84706754e6db1a25ee60b82.tar.xz
+Type: ipkg
+Description: Broadcom BCM43456 FullMac SDIO firmware
+https://github.com/armbian/firmware
+
+@@
+
+Package: brcmfmac-nvram-43456-sdio
+Version: 2021-05-05-761658e1701c77a0a84706754e6db1a25ee60b82-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43456 NVRAM firmware
+Maintainer: 
+Source: armbian-firmware-2021-05-05-761658e1701c77a0a84706754e6db1a25ee60b82.tar.xz
+Type: ipkg
+Description: Broadcom BCM43456 NVRAM firmware
+https://github.com/armbian/firmware
+
+@@
+
+

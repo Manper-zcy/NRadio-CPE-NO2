@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/packages/gowebdav/Makefile
+Build-Depends: golang/host
+
+Package: gowebdav
+Submenu: File Transfer
+Version: 0.0.5-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A simple WebDav server written in Go
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gowebdav-0.0.5.tar.gz
+Type: ipkg
+Description: A simple WebDav server written in Go
+https://github.com/1715173329/gowebdav
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

@@ -1,0 +1,39 @@
+Source-Makefile: package/network/utils/shortcut-fe/Makefile
+
+Package: kmod-shortcut-fe
+Submenu: Network Support
+Version: <LINUX_VERSION>-8
+Depends: @IPV6 +kmod-nf-conntrack
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NF_CONNTRACK_TIMEOUT=y CONFIG_SHORTCUT_FE=y CONFIG_XFRM=y
+Description: Kernel driver for SFE
+
+@@
+
+Package: kmod-shortcut-fe-cm
+Submenu: Network Support
+Version: <LINUX_VERSION>-8
+Depends: +kmod-ipt-conntrack +kmod-shortcut-fe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_XFRM=y
+Description: Kernel driver for SFE
+
+@@
+
+

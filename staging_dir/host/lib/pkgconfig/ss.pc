@@ -1,0 +1,12 @@
+prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+exec_prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ss
+Description: Subsystem command parsing library
+Version: 1.45.6
+Requires.private: com_err
+Cflags: -I${includedir}/ss -I${includedir}
+Libs: -L${libdir} -lss
+Libs.private: -ldl

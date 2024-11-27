@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/r8101/Makefile
+
+Package: kmod-r8101
+Submenu: Network Devices
+Version: <LINUX_VERSION>+1.038.02--1
+Depends: @PCI_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Driver for Realtek r8101 chipsets
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: r8101-1.038.02.tar.bz2
+License: GPL-2.0-only
+Type: ipkg
+Description:   This package contains a driver for Realtek r8101 chipsets.
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

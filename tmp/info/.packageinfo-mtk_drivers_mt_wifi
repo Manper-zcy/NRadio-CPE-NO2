@@ -1,0 +1,25 @@
+Source-Makefile: package/mtk/drivers/mt_wifi/Makefile
+Build-Depends: warp
+
+Package: kmod-mt_wifi
+Menu: 1
+Submenu: Drivers
+Version: <LINUX_VERSION>+7.6.6.1--
+Depends: +wifi-dats +kmod-conninfra +kmod-mediatek_hnat +kmod-warp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: MTK Properties
+Title: MTK wifi AP driver
+Maintainer: 
+Source: mt798x-7.6.6.1-src.tar.xz
+Type: ipkg
+Description: MTK wifi AP driver
+
+@@
+Config:
+	source "package/mtk/drivers/mt_wifi/config.in"
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-ubus/Makefile
+Build-Depends: node/host
+
+Package: node-ubus
+Submenu: Node.js
+Version: 1.0.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libubus +libjson-c +libblobmsg-json +libubox
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: OpenWrt Ubus interface for Node-js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-ubus-1.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  NodeJS package to interface with OpenWrt UBus
+https://www.npmjs.com/package/node-ubus
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

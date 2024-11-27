@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-bufferutil/Makefile
+Build-Depends: node/host
+
+Package: node-bufferutil
+Submenu: Node.js
+Version: 4.0.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: WebSocket buffer utils
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: bufferutil-4.0.7.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  bufferutil is what makes ws fast. It provides some utilities to efficiently perform some operations such as masking and unmasking the data payload of WebSocket frames.
+https://www.npmjs.org/package/bufferutil
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

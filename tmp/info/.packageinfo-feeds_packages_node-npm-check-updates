@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-npm-check-updates/Makefile
+Build-Depends: node/host
+
+Package: node-npm-check-updates
+Submenu: Node.js
+Version: 16.14.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +git
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Upgrade your NPM/Bower dependencies
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Patrik Laszlo <alabard@gmail.com>
+Source: npm-check-updates-16.14.6.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  The npm-check-updates program is a command-line tool that allows you to upgrade your package.json or bower.json dependencies to the latest versions, regardless of existing version constraints
+https://www.npmjs.com/package/npm-check-updates/
+Hirokazu MORIKAWA <morikw2@gmail.com>, Patrik Laszlo <alabard@gmail.com>
+@@
+
+

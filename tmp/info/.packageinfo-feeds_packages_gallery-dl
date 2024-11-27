@@ -1,0 +1,56 @@
+Source-Makefile: package/feeds/packages/gallery-dl/Makefile
+
+Package: gallery-dl
+Version: 1.25.8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates +python3 +python3-codecs +python3-ctypes +python3-email +python3-requests +python3-setuptools +python3-xml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: Command-line program to download image galleries and collections
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gallery_dl-1.25.8.tar.gz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   gallery-dl is a command-line program to download image galleries
+  and collections from several image hosting sites.
+
+  It is a cross-platform tool with many configuration options and
+  powerful filenaming capabilities.
+https://github.com/mikf/gallery-dl
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: gallery-dl-src
+Version: 1.25.8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: Command-line program to download image galleries and collections (sources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gallery_dl-1.25.8.tar.gz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       gallery-dl is a command-line program to download image galleries
+  and collections from several image hosting sites.
+
+  It is a cross-platform tool with many configuration options and
+  powerful filenaming capabilities.
+
+    This package contains the Python source files for gallery-dl.
+https://github.com/mikf/gallery-dl
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    depends on PACKAGE_gallery-dl
+@@
+
+

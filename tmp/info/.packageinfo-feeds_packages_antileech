@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/antileech/Makefile
+Build-Depends: libgd !BUILD_NLS:libiconv !BUILD_NLS:gettext
+
+Package: antileech
+Version: 2019-10-09-f5ce55d2fc0026c28e30cfc8cab4fb45ad1e0161-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libwxbase
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: AntiLeech for aMule
+Maintainer: 
+Source: antileech-2019-10-09-f5ce55d2fc0026c28e30cfc8cab4fb45ad1e0161.tar.xz
+Type: ipkg
+Description:   Dynamic Leech Protection(DLP) is a part of eMule Xtreme Mod at first.
+  This project aim to make DLP available for aMule. This repo contains
+  the plugin library "libantiLeech".
+https://github.com/persmule/amule-dlp.antiLeech
+
+@@
+
+

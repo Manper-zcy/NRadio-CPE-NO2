@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/packages/tinyportmapper/Makefile
+
+Package: tinyPortMapper
+Version: 20200818.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A High-Performance Port Mapping/Forwarding Utility
+Maintainer: Yu Wang
+Source: tinyPortMapper-20200818.0.tar.gz
+License: MIT
+Type: ipkg
+Description:   A Lightweight High-Performance Port Mapping/Forwarding Utility
+  using epoll/libev, supports IPv4 and IPv6 for both TCP and UDP.
+https://github.com/wangyu-/tinyPortMapper
+Yu Wang
+@@
+
+

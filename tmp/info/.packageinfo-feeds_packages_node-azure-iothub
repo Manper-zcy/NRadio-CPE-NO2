@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/node-azure-iothub/Makefile
+Build-Depends: node/host
+
+Package: node-azure-iothub
+Submenu: Node.js
+Version: 1.16.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Azure IoT SDK - IoT Hub
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: azure-iothub-1.16.4.tgz
+License: MIT
+Type: ipkg
+Description:  The Azure IoT Service SDK for Node.js helps you build applications that interact with your devices and manage their identities in your IoT hub
+https://www.npmjs.org/package/azure-iothub
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

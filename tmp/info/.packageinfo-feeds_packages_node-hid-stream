@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-hid-stream/Makefile
+Build-Depends: node/host
+
+Package: node-hid-stream
+Submenu: Node.js
+Version: 1.1.0-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-hid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Stream data from HID device in Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-hid-stream-1.1.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Stream data from HID device in Node.js. Wraps node-hid in a node.js Stream.
+https://www.npmjs.org/package/node-hid-stream
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

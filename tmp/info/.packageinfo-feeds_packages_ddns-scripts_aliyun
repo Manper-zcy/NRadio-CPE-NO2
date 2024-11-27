@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/packages/ddns-scripts_aliyun/Makefile
+
+Package: ddns-scripts_aliyun
+Submenu: IP Addresses and Names
+Version: 1.0.3-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +wget-ssl +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: DDNS extension for AliYun.com
+Maintainer: Sense <sensec@gmail.com>
+Source: 
+License: GPLv2
+Type: ipkg
+Description:   Dynamic DNS Client scripts extension for AliYun.com
+Sense <sensec@gmail.com>
+@@
+
+

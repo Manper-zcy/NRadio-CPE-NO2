@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-red-contrib-homekit-bridged/Makefile
+Build-Depends: node/host
+
+Package: node-red-contrib-homekit-bridged
+Submenu: Node.js
+Version: 1.5.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-red +node-hap-nodejs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Simulate Apple HomeKit devices
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-red-contrib-homekit-bridged-1.5.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  node-red-contrib-homekit-bridged (aka NRCHKB) is a Node-RED nodes pack to simulate Apple HomeKit devices.
+https://flows.nodered.org/node/node-red-contrib-homekit-bridged
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

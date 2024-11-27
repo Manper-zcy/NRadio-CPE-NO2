@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-pty/Makefile
+Build-Depends: node/host node-typescript/host
+
+Package: node-pty
+Submenu: Node.js
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Fork pseudoterminals in Node.JS
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-pty-1.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  forkpty(3) bindings for node.js. This allows you to fork processes with pseudoterminal file descriptors. It returns a terminal object which allows reads and writes.
+https://www.npmjs.com/package/node-pty
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

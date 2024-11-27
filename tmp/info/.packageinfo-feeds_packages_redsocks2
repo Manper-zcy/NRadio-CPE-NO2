@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/redsocks2/Makefile
+
+Package: redsocks2
+Submenu: Web Servers/Proxies
+Version: 0.67-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Redirect TCP connection to proxy server
+Maintainer: semigodking <semigodking@gmail.com>
+Source: redsocks2-0.67.tar.xz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   This is a modified version of original redsocks.
+  Transparent redirector of any TCP/UDP connection to proxy.
+https://github.com/semigodking/redsocks
+semigodking <semigodking@gmail.com>
+@@
+
+

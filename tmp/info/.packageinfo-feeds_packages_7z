@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/7z/Makefile
+Build-Types: host
+
+Package: 7z
+Submenu: Compression
+Version: 22.01-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: packages
+Title: File archiver with a high compression ratio
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: 7z2201-src.tar.xz
+License: LGPL-2.1-or-later BSD-3-Clause unRAR
+LicenseFiles: DOC/License.txt DOC/copying.txt DOC/unRarLicense.txt
+Type: ipkg
+Description: File archiver with a high compression ratio
+https://7-zip.org/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

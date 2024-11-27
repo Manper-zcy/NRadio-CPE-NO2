@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/luci/luci-app-Smstrun/Makefile
+
+Package: luci-app-Smstrun
+Submenu: 3. Applications
+Version: 1.4.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: Luci App Smstrun
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Luci App Smstrun
+
+@@
+
+

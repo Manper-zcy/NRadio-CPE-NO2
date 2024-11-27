@@ -1,0 +1,24 @@
+Source-Makefile: package/mtk/drivers/warp/Makefile
+
+Package: kmod-warp
+Menu: 1
+Submenu: Drivers
+Version: <LINUX_VERSION>+20221209-3e6ae1-
+Depends: +kmod-mediatek_hnat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: MTK Properties
+Title: MTK warp driver
+Maintainer: 
+Source: warp_20221209-3e6ae1-src.tar.xz
+Type: ipkg
+Description: MTK warp driver
+
+@@
+Config:
+	source "package/mtk/drivers/warp/config.in"
+@@
+
+

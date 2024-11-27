@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/sub-web/Makefile
+Build-Depends: node/host node-yarn/host
+
+Package: sub-web
+Version: 2022-11-10-71e53414a89b5fd5ec0ef453e32202194993d0cf-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +subconverter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A WebUI for generating proxy subscription url
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: sub-web-2022-11-10-71e53414a89b5fd5ec0ef453e32202194993d0cf.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Based on vue-cli and subconverter, for generating proxy subscription
+  url automatically.
+https://github.com/CareyWang/sub-web
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

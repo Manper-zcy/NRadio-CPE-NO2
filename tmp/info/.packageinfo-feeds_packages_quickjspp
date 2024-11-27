@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/quickjspp/Makefile
+
+Package: libquickjs
+Version: 2022-07-22-9cee4b4d27271d54b95f6f42bfdc534ebeaaeb72-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Repository: packages
+Title: A small and embeddable Javascript engine
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: quickjspp-2022-07-22-9cee4b4d27271d54b95f6f42bfdc534ebeaaeb72.tar.xz
+Type: ipkg
+Description:   QuickJS is a small and embeddable Javascript engine. It supports the
+  ES2020 specification including modules, asynchronous generators,
+  proxies and BigInt.
+
+  It optionally supports mathematical extensions such as big decimal
+  floating point numbers (BigDecimal), big binary floating point
+  numbers (BigFloat) and operator overloading.
+https://bellard.org/quickjs/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

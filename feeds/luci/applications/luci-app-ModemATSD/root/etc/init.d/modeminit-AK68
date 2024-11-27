@@ -1,0 +1,74 @@
+#!/bin/sh /etc/rc.common
+START=98
+
+restart(){                                                                                                       
+  modem_init_AK68
+}
+
+start(){
+  modem_init_AK68
+}
+
+modem_init_AK68(){
+  /usr/bin/BLUE4WAN-AK68.sh
+  echo 1 > /sys/class/leds/hc:blue:wifi/brightness
+  if [ ! -e /usr/share/modem/rm520n.sh ]; then
+    echo 1 >/sys/class/gpio/cpe-pwr/value
+  fi
+  echo "AK68模块正在获取信息...请等待几分钟后刷新页面。" > /tmp/cpe_cell-AK68.file
+  sleep 10
+  # 检测192.168.225.1是否能通
+  if ping -c 1 192.168.225.1 &> /dev/null; then
+    echo "RM520N" > /tmp/modconf-AK68.conf
+    cp -f /usr/share/modem-AK68/C-RM520N /etc/config/atsd_tools
+    /etc/init.d/atsd_tools restart
+    echo "已有设备" > /tmp/devck.conf
+    /usr/share/modem-AK68/rm520n-AK68.sh &
+    /usr/share/modem-AK68/netmodeled-AK68.sh &
+    /usr/share/modem-AK68/devck-AK68.sh &
+    python3 /usr/bin/httpapi-AK68.py &
+    echo "已尝试开启网络AT服务。"
+  # 检测192.168.8.1是否能通
+  elif ping -c 1 192.168.8.1 &> /dev/null; then
+    echo "MT5700" > /tmp/modconf-AK68.conf
+    cp -f /usr/share/modem-AK68/C-MT5700 /etc/config/atsd_tools
+    /etc/init.d/atsd_tools restart
+    echo "已有设备" > /tmp/devck.conf
+    echo "已尝试开启网络AT服务。"
+    python3 /usr/bin/httpapi-AK68.py &
+    /usr/share/modem-AK68/MT5700-AK68.sh &
+    /usr/share/modem-AK68/netmodeled-AK68.sh &
+    /usr/share/modem-AK68/devck-AK68.sh &
+  else
+    echo "设备检测中..." > /tmp/devck.conf
+    echo "模组检测中..." > /tmp/modconf-AK68.conf
+    echo "未检测到模组设备连接,等待连接中..."
+    python3 /usr/bin/httpapi-AK68.py &
+    /usr/share/modem-AK68/MT5700-AK68.sh &
+    /usr/share/modem-AK68/netmodeled-AK68.sh &
+    /usr/share/modem-AK68/devck-AK68.sh &
+  fi
+}
+
+check_and_update_simsel_AK68_RM520() {
+  local sim_slot=$(atsd_tools_cli -i cpe -c "AT+QUIMSLOT?" | grep '+QUIMSLOT:' | awk '{print $2}')
+  local sim_sel_file="/etc/simsel-AK68"
+
+  # 如果 sim_sel_file 不存在，则创建并写入外置卡 SIM 卡槽值，仅用于修正刷机和ui显示问题
+  if [ ! -e "$sim_sel_file" ]; then
+    echo 1 > "$sim_sel_file"
+    atsd_tools_cli -i cpe -c "AT+QUIMSLOT=1"
+  fi
+}
+
+check_and_update_simsel_AK68_MT5700() {
+  local sim_slot=$(atsd_tools_cli -i cpe -c "AT+QUIMSLOT?" | grep '+QUIMSLOT:' | awk '{print $2}')
+  local sim_sel_file="/etc/simsel-AK68"
+
+  # 如果 sim_sel_file 不存在，则创建并写入外置卡 SIM 卡槽值，仅用于修正刷机和ui显示问题
+  if [ ! -e "$sim_sel_file" ]; then
+    echo 1 > "$sim_sel_file"
+    atsd_tools_cli -i cpe -c "AT+QUIMSLOT=1"
+  fi
+}
+

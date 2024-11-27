@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/gotop/Makefile
+Build-Depends: golang/host
+
+Package: gotop
+Version: 4.2.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Repository: packages
+Title: A terminal based graphical activity monitor
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gotop-4.2.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Another terminal based graphical activity monitor.
+https://github.com/xxxserxxx/gotop
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

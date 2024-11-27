@@ -1,0 +1,13 @@
+prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+exec_prefix=/home/zhouwei/immortalwrt-mt798x/staging_dir/host
+libdir=${prefix}/lib
+sharedlibdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

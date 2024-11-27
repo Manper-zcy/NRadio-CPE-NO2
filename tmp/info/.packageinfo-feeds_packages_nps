@@ -1,0 +1,52 @@
+Source-Makefile: package/feeds/packages/nps/Makefile
+Build-Depends: golang/host
+
+Package: npc
+Submenu: Web Servers/Proxies
+Version: 0.26.10-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A intranet penetration proxy server (npc)
+Maintainer: 
+Source: nps-0.26.10.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
+  with a powerful web management terminal.
+
+  This package contains the npc.
+https://ehang-io.github.io/nps
+
+@@
+
+Package: nps
+Submenu: Web Servers/Proxies
+Version: 0.26.10-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A intranet penetration proxy server (nps)
+Maintainer: 
+Source: nps-0.26.10.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
+  with a powerful web management terminal.
+
+  This package contains the nps.
+https://ehang-io.github.io/nps
+
+@@
+
+

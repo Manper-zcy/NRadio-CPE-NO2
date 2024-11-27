@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/r8152/Makefile
+
+Package: kmod-usb-net-rtl8152-vendor
+Submenu: USB Support
+Version: <LINUX_VERSION>+2.16.3.20221209--1
+Depends: +kmod-usb-net
+Conflicts: kmod-usb-net-rtl8152
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel module for USB-to-Ethernet Realtek convertors
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: r8152-2.16.3.20221209.tar.gz
+License: GPL-2.0-only
+Type: ipkg
+Description:   Kernel module for Realtek RTL8152/RTL8153 Based USB Ethernet Adapters
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

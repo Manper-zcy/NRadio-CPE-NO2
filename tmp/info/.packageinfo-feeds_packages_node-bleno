@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-bleno/Makefile
+Build-Depends: node/host
+
+Package: node-bleno
+Submenu: Node.js
+Version: 0.5.0-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bluetooth-hci-socket
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: BLE (Bluetooth low energy) peripherals for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: bleno-0.5.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A node.js module for implementing BLE (Bluetooth low energy) peripherals
+https://www.npmjs.org/package/bleno
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

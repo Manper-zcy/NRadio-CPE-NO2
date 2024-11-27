@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-forever/Makefile
+Build-Depends: node/host
+
+Package: node-forever
+Submenu: Node.js
+Version: 4.0.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node script runs continuously
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: forever-4.0.3.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)
+https://www.npmjs.org/package/forever
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/tinyfecvpn/Makefile
+
+Package: tinyfecvpn
+Submenu: VPN
+Version: 20210116.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +kmod-tun +USE_GLIBC:libatomic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A Network Improving Tool
+Maintainer: Yu Wang
+Source: tinyfecVPN-20210116.0.tar.xz
+License: MIT
+Type: ipkg
+Description:   A Lightweight VPN with Build-in Forward Error Correction Support (or A Network Improving Tool
+  which works at VPN mode). Improves your Network Quality on a High-latency Lossy Link.
+https://github.com/wangyu-/tinyfecVPN
+Yu Wang
+@@
+
+

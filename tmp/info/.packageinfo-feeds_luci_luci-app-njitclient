@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/luci/luci-app-njitclient/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-njitclient
+Submenu: 3. Applications
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +njit8021xclient
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: NJIT 802.1X Client for LuCI
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description:    This package contains LuCI configuration pages for njit8021xclient.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

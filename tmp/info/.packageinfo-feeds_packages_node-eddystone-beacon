@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-eddystone-beacon/Makefile
+Build-Depends: node/host
+
+Package: node-eddystone-beacon
+Submenu: Node.js
+Version: 1.0.7-9
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-bleno
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Create an Eddystone Beacon using Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: eddystone-beacon-1.0.7.tgz
+License: Apche-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  Create an Eddystone Beacon using Node.js
+https://www.npmjs.org/package/eddystone-beacon
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

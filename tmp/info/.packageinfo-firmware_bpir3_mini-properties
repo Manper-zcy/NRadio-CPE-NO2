@@ -1,0 +1,21 @@
+Source-Makefile: package/firmware/bpir3_mini-properties/Makefile
+
+Package: bpir3_mini-properties
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: PHYs firmware & fan control for BPI-R3-MINI 
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   This package install PHYs firmware & fan control for BPI-R3-MINI.
+
+@@
+
+

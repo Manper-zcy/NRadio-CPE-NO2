@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/alac/Makefile
+
+Package: libalac
+Version: 0.0.7-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: The Apple Lossless Audio Codec Library
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: alac-0.0.7.tar.xz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   The Apple Lossless Audio Codec (ALAC) is an audio codec developed by
+  Apple and supported on iPhone, iPad, most iPods, Mac and iTunes.
+  ALAC is a data compression method which reduces the size of audio
+  files with no loss of information. A decoded ALAC stream is
+  bit-for-bit identical to the original uncompressed audio file.
+https://github.com/mikebrady/alac
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

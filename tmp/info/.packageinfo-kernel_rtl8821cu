@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/rtl8821cu/Makefile
+
+Package: kmod-rtl8821cu
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-04-09-8c2226a74ae718439d56248bd2e44ccf717086d5-1
+Depends: +kmod-cfg80211 +kmod-usb-core +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: kmod-rtl8821cu
+Section: kernel
+Category: Kernel modules
+Title: Realtek RTL8811CU/RTL8821CU support
+Maintainer: 
+Source: rtl8821cu-2022-04-09-8c2226a74ae718439d56248bd2e44ccf717086d5.tar.xz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Realtek RTL8811CU/RTL8821CU support
+
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-bluetooth-hci-socket/Makefile
+Build-Depends: node/host
+
+Package: node-bluetooth-hci-socket
+Submenu: Node.js
+Version: 0.5.3-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-usb +bluez-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Bluetooth HCI socket binding for Node.js
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-bluetooth-hci-socket-0.5.3.tar.xz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Bluetooth HCI socket binding for Node.js
+https://www.npmjs.com/package/bluetooth-hci-socket
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-aws-iot-device-sdk/Makefile
+Build-Depends: node/host
+
+Package: node-aws-iot-device-sdk
+Submenu: Node.js
+Version: 2.2.12-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: AWS IoT Node.js SDK for Embedded Devices
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: aws-iot-device-sdk-2.2.12.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:  The aws-iot-device-sdk.js package allows developers to write JavaScript applications which access the AWS IoT Platform via MQTT or MQTT over the Secure WebSocket Protocol
+https://www.npmjs.com/package/aws-iot-device-sdk
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

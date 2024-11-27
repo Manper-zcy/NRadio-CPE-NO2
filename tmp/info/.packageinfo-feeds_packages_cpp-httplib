@@ -1,0 +1,26 @@
+Source-Makefile: package/feeds/packages/cpp-httplib/Makefile
+Build-Types: host
+
+Package: cpp-httplib
+Version: 0.5.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: lib
+Section: lib
+Category: Libraries
+Repository: packages
+Title: A C++11 single-file header-only cross platform HTTP/HTTPS library.
+Maintainer: ElonH <elonhhuang@gmail.com>
+Source: cpp-httplib-0.5.7.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	A C++11 single-file header-only cross platform HTTP/HTTPS library.
+	It's extremely easy to setup. Just include `httplib.h` file in your code!
+https://github.com/yhirose/cpp-httplib
+ElonH <elonhhuang@gmail.com>
+@@
+
+

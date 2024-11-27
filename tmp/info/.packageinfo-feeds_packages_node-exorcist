@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-exorcist/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-exorcist
+Submenu: Node.js
+Version: 2.0.0-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Externalizes the source map
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: exorcist-2.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Externalizes the source map found inside a stream to an external .map file or stream.
+https://www.npmjs.org/package/exorcist
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

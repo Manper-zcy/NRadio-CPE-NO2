@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/RPi.GPIO/Makefile
+
+Package: python3-RPi.GPIO
+Submenu: Python
+Version: 0.7.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: python3-RPi.GPIO
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: RPi.GPIO-0.7.1.tar.gz
+License: MIT
+LicenseFiles: LICENCE.txt
+Type: ipkg
+Description:   A module to control Raspberry Pi GPIO channels.
+https://sourceforge.net/projects/raspberry-gpio-python/
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

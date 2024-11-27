@@ -1,0 +1,57 @@
+Source-Makefile: package/feeds/packages/pcap-dnsproxy/Makefile
+
+Package: pcap-dnsproxy
+Submenu: IP Addresses and Names
+Version: 0.4.9.13-2019-05-05-bc9f540d9febc5f61d24d583dbdbcc858dd817e3-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libevent2-core +PCAP_DNSPROXY_LIBPCAP:libpcap +PCAP_DNSPROXY_LIBSODIUM:libsodium +PCAP_DNSPROXY_TLS:libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: A local DNS server based on LibPcap
+Maintainer: Chengr28 <chengr28@gmail.com>
+Source: pcap-dnsproxy-0.4.9.13-2019-05-05-bc9f540d9febc5f61d24d583dbdbcc858dd817e3.tar.xz
+License: GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description: A local DNS server based on LibPcap
+https://github.com/chengr28/Pcap_DNSProxy
+Chengr28 <chengr28@gmail.com>
+@@
+Config:
+	config PCAP_DNSPROXY_LIBPCAP
+		bool "Build with libpcap support.(Strongly recommended)"
+		default y
+		help
+		  LibPcap is for packet capture, Pcap_DNSProxy takes advantage
+		  of it to detect poisoned DNS reply.
+
+		  We strongly recommend to keep it as-is.
+
+	config PCAP_DNSPROXY_LIBSODIUM
+		bool "Build with libsodium support.(Recommended)"
+		default y
+		help
+		  LibSodium is for DNSCurve/DNSCrypt protocol support.
+
+		  We recommend to keep it as-is unless you do NOT
+		  need this protocol anymore.
+
+	config PCAP_DNSPROXY_TLS
+		bool "Build with TLS support.(Recommended)"
+		default y
+		help
+		  We recommend to keep it as-is.
+
+	config PCAP_DNSPROXY_LISTENPORT
+		int "Listen Port, should NOT be 53"
+		default 1053
+		help
+		  You can customize the listen port of Pcap_DNSProxy.
+		  Note that you should NOT set the value to 53, which
+		  conflicts with DNSMasq in OpenWrt.
+@@
+
+

@@ -1,0 +1,94 @@
+Source-Makefile: package/mtk/drivers/wifi-profile/Makefile
+
+Package: wifi-dats
+Menu: 1
+Submenu: Drivers
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: MTK Properties
+Category: MTK Properties
+Repository: base
+Title: MTK WiFi l1 & l2 dat files
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   This package install wifi l1 and l2 dat files.
+
+@@
+Config:
+if PACKAGE_wifi-dats
+	menuconfig first_card
+		bool "1st card"
+		default y
+
+	if first_card
+	config first_card_name
+		string "1st card name"
+		default "MT7981"
+	endif
+
+	menuconfig second_card
+		bool "2nd card"
+		default n
+
+	if second_card
+	config second_card_name
+		string "2nd card name"
+		default "MT7981"
+	endif
+
+	menuconfig third_card
+		bool "3rd card"
+		default n
+
+	if third_card
+	config third_card_name
+		string "3rd card name"
+		default "MT7981"
+	endif
+endif
+@@
+
+Package: wifi-profile
+Menu: 1
+Submenu: Drivers
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +wifi-dats
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: MTK Properties
+Category: MTK Properties
+Repository: base
+Title: MTK WiFi setup scripts
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   This package install wifi setup scripts.
+
+@@
+Config:
+if PACKAGE_wifi-profile
+	choice
+		prompt "WiFi Setting"
+		default WIFI_NORMAL_SETTING
+		config WIFI_NORMAL_SETTING
+			bool "normal setting"
+
+		config WIFI_QUICK_SETTING
+			bool "quick setting"
+
+		help
+			This is a way to configure wifi after wifi reload(Save & Apply from UI).
+			Normal setting means reloading dat file which will execute "wifi down; wifi up"
+			Quick setting means executing iwpriv commands corresponding to your operation on UI.
+	endchoice
+endif
+@@
+
+

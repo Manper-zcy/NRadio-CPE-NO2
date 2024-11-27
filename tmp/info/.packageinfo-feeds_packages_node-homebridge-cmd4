@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-homebridge-cmd4/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-cmd4
+Submenu: Node.js
+Version: 7.0.1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-homebridge
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Exec Plugin for Homebridge supporting all
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-cmd4-7.0.1.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Cmd4 is a plugin for Homebridge that lets you see what Homebridge and Homekit are all about, without actually owning a single accessory! For the more advanced user, Cmd4 brings CLI support for all device types (Accessories) and characteristics.
+https://www.npmjs.com/package/homebridge-cmd4
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

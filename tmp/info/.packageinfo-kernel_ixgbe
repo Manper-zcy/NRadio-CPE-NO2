@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/ixgbe/Makefile
+
+Package: kmod-ixgbe-vendor
+Submenu: Network Devices
+Version: <LINUX_VERSION>+5.19.6--2
+Depends: @PCI_SUPPORT +kmod-ptp +kmod-libphy @TARGET_x86
+Conflicts: kmod-ixgbe
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Intel(R) 82598/82599 PCI-Express 10 Gigabit Ethernet support (vendor driver)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: ixgbe-5.19.6.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Kernel modules for Intel(R) 82598/82599 PCI-Express 10 Gigabit Ethernet adapters.
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

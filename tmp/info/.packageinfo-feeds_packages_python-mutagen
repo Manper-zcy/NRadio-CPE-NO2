@@ -1,0 +1,70 @@
+Source-Makefile: package/feeds/packages/python-mutagen/Makefile
+
+Package: python3-mutagen
+Submenu: Python
+Version: 1.46.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +python3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python module for handling audio metadata
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: mutagen-1.46.0.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Mutagen is a Python module to handle audio metadata.
+
+  It supports ASF, FLAC, MP4, Monkey's Audio, MP3, Musepack, Ogg Opus,
+  Ogg FLAC, Ogg Speex, Ogg Theora, Ogg Vorbis, True Audio, WavPack,
+  OptimFROG, and AIFF audio files.
+
+  All versions of ID3v2 are supported, and all standard ID3v2.4 frames
+  are parsed. It can read Xing headers to accurately calculate the
+  bitrate and length of MP3s. ID3 and APEv2 tags can be edited regardless
+  of audio format. It can also manipulate Ogg streams on an individual
+  packet/page level.
+https://mutagen.readthedocs.io/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: python3-mutagen-src
+Submenu: Python
+Version: 1.46.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Python module for handling audio metadata (sources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: mutagen-1.46.0.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:       Mutagen is a Python module to handle audio metadata.
+
+  It supports ASF, FLAC, MP4, Monkey's Audio, MP3, Musepack, Ogg Opus,
+  Ogg FLAC, Ogg Speex, Ogg Theora, Ogg Vorbis, True Audio, WavPack,
+  OptimFROG, and AIFF audio files.
+
+  All versions of ID3v2 are supported, and all standard ID3v2.4 frames
+  are parsed. It can read Xing headers to accurately calculate the
+  bitrate and length of MP3s. ID3 and APEv2 tags can be edited regardless
+  of audio format. It can also manipulate Ogg streams on an individual
+  packet/page level.
+
+    This package contains the Python source files for python3-mutagen.
+https://mutagen.readthedocs.io/
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+Config:
+    depends on PACKAGE_python3-mutagen
+@@
+
+

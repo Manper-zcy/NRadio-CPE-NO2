@@ -1,0 +1,22 @@
+Source-Makefile: package/mtk/applications/mtwifi-cfg/Makefile
+
+Package: mtwifi-cfg
+Submenu: Applications
+Version: 1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iwinfo +wifi-dats +lua-cjson +datconf-lua @!PACKAGE_luci-app-mtk @!PACKAGE_wifi-profile
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: MTK Properties
+Category: MTK Properties
+Repository: base
+Title: mtwifi configure scripts for mt798x
+Maintainer: 
+Source: 
+License: GPL-2.0+
+Type: ipkg
+Description: mtwifi configure scripts for mt798x
+
+@@
+
+

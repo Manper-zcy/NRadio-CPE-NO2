@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-statvfs/Makefile
+Build-Depends: node/host
+
+Package: node-statvfs
+Submenu: Node.js
+Version: 2.2.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: node binding to POSIX statvfs (file system information)
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: statvfs-2.2.1.tgz
+License: MIT
+LicenseFiles: README.md
+Type: ipkg
+Description:  statvfs is a super simple module that just gives you access to statvfs(3)
+https://www.npmjs.org/package/statvfs
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

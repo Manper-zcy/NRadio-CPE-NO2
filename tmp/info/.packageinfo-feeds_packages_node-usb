@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-usb/Makefile
+Build-Depends: node/host
+
+Package: node-usb
+Submenu: Node.js
+Version: 2.11.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +libusb-1.0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Library to access USB devices (v2)
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: usb-2.11.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Node.js library for communicating with USB devices in JavaScript / CoffeeScript
+https://www.npmjs.com/package/usb
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/nas/ffmpeg-remux/Makefile
+
+Package: ffmpeg-remux
+Version: 4.3.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +libbz2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: nas
+Title: FFmpeg remux
+Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
+Source: ffmpeg-4.3.3.tar.xz
+License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
+LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
+Type: ipkg
+Description:  FFmpeg remux only program
+https://ffmpeg.org/
+Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
+@@
+
+

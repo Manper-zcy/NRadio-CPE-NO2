@@ -1,0 +1,22 @@
+Source-Makefile: package/kernel/mt7601u-ap/Makefile
+
+Package: kmod-mt7601u-ap
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>+2022-12-28-bb9bfcfd8327bd0973c68417d41cafc41ca2ed09-1
+Depends: +kmod-usb-core +wireless-tools @USB_SUPPORT +@DRIVER_WEXT_SUPPORT
+Conflicts: kmod-mt7601u
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: AP driver for MT7601U dongles
+Maintainer: 
+Source: mt7601u-ap-2022-12-28-bb9bfcfd8327bd0973c68417d41cafc41ca2ed09.tar.xz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   AP driver for MT7601U chipset based adapters
+
+@@
+
+

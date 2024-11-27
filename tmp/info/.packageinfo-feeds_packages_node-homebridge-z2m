@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-homebridge-z2m/Makefile
+Build-Depends: node/host
+
+Package: node-homebridge-z2m
+Submenu: Node.js
+Version: 1.9.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-homebridge +node-mqtt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Expose your Zigbee devices to HomeKit with ease
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: homebridge-z2m-1.9.2.tgz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Expose your Zigbee devices to HomeKit with ease, by integrating Zigbee2MQTT with Homebridge (via an MQTT message broker).
+https://www.npmjs.com/package/homebridge-z2m
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

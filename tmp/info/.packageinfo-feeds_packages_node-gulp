@@ -1,0 +1,27 @@
+Source-Makefile: package/feeds/packages/node-gulp/Makefile
+Build-Depends: node/host
+Build-Depends/host: node/host
+Build-Types: host
+
+Package: node-gulp
+Submenu: Node.js
+Version: 4.0.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: The streaming build system.
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: gulp-4.0.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  A toolkit to automate & enhance your workflow. Leverage gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines.
+https://gulpjs.com/
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

@@ -1,0 +1,36 @@
+Source-Makefile: package/feeds/packages/ddns-go/Makefile
+Build-Depends: golang/host
+
+Package: ddns-go
+Submenu: IP Addresses and Names
+Version: 5.6.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Simple and easy-to-use Dynamic DNS client
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Require-User: ddns-go:ddns-go
+Source: ddns-go-5.6.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A simple and easy-to-use Dynamic DNS client with IPv6 support.
+  Supported backend:
+    - Alidns
+    - Baidu Cloud
+    - CloudFlare
+    - DnsPod
+    - GoDaddy Domains
+    - Google Domains
+    - Huawei Cloud
+    - Porkbun
+    - Custom callback
+https://github.com/jeessy2/ddns-go
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

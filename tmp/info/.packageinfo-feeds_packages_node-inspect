@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/packages/node-inspect/Makefile
+Build-Depends: node/host
+
+Package: node-inspect
+Submenu: Node.js
+Version: 2.0.0-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: packages
+Title: Node Inspect
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Source: node-inspect-2.0.0.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  node-inspect re-implementing node debug against the new V8 debugger protocol.
+https://www.npmjs.org/package/node-inspect
+Hirokazu MORIKAWA <morikw2@gmail.com>
+@@
+
+

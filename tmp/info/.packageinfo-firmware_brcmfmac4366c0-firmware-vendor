@@ -1,0 +1,20 @@
+Source-Makefile: package/firmware/brcmfmac4366c0-firmware-vendor/Makefile
+
+Package: brcmfmac-firmware-4366c0-pcie-vendor
+Version: 1-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: brcmfmac-firmware-4366c0-pcie
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom 4366c0 FullMac PCIe firmware from vendor
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Broadcom 4366c0 FullMac PCIe firmware from vendor
+
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/luci/luci-app-cellscan/Makefile
+
+Package: luci-app-cellscan
+Submenu: 3. Applications
+Version: 1.01-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +lua-cjson
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: Cell Scan Results
+Maintainer: newton_miku
+Source: 
+Type: ipkg
+Description: Cell Scan Results
+newton_miku
+@@
+
+
